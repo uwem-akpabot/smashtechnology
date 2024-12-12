@@ -1,0 +1,470 @@
+/* == 1. SMALLEST SCREENS, 2. SMALL TABLET SCREENS, AND SMALL SCREENS LIKE IPAD PRO */
+@media screen and (max-width: 1024px){
+    :root{
+        --courses-h1: 1.9rem;
+        --content-edge-mobile: .8rem;
+        --content-edge: 3rem 2.2rem;
+
+        /* --biggest-font-size: 8em;
+        --h1-font-size: 2.3rem;
+        --h2-font-size: 1.6rem;
+        --normal-font-size: 1.7rem; */
+    }    
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }   
+    
+    /* ZYZICS Reusable Grid Columns */
+    .zy-c1-xs, .zy-c2-xs, .zy-c3-xs, .zy-c4-xs{
+        display: grid;
+    }    
+    .zy-c1-xs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .zy-c2-xs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .zy-c3-xs{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .zy-c4-xs{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    html{
+        font-size: 85%; /* change for different device sizes */
+    }
+    body{
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* BANNER */
+    .video-banner{
+        width: 100%;
+        padding-inline: 24px !important;
+    }    
+    .banner-content{
+        margin-top: auto;
+        position: relative;
+        text-align: center;
+        z-index: 1; /* Places content above the overlay and video */
+    }
+    .banner-content h1, .banner-content span{
+        font-size: 32px;
+        margin: 0;
+        color: white;
+        font-weight: 600;
+        text-align: left;
+        line-height: 39px;
+    }
+    .banner-content h1 small{
+        font-size: 24px;
+    }
+    .banner-content span{
+        color: var(--smashtech-color);
+    }
+
+    /* WHO WE ARE*/
+    #whoweare{
+        width: 100%;
+        margin: 0;
+        padding: 0; 
+    }
+    #whoweare .splash{
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        gap: 1rem;
+    }
+    #whoweare > div{
+        gap: 0 !important;
+    }
+    #whoweare > div > div:nth-child(2){
+        margin-top: 0 !important;
+        width: 100% !important;
+    }
+    #whoweare h2.desktop{
+        display: none;
+    }
+    #whoweare h2.mobile{
+        display: block;
+        text-align: center;
+        margin: 0;
+        margin-block: 32px !important;
+        width: 100%;
+        font-size: 24px;
+    }
+    #whoweare span{
+        font-weight: bold;
+        font-size: calc(var(--text-font-size) * 1.25);
+    }
+    .splash > div:nth-child(1) .line-container{
+        margin-left: auto;
+        margin-right: 0
+    }
+    .small-container{
+        background-color: var(--smashtech-deep-grey);
+        border-radius: 40px;
+        width: 100%;
+        height: 200px;
+        margin-block: 17px;
+    }
+    .line-container{
+        background-color: #F8A580;
+        border-radius: var(--smash-border-radius);
+        width: 70%;
+        height: 32px;
+    }
+    .line-container:nth-child(1){
+        background-color: #807FB2
+    }
+
+    /* OUR BUSINESS */
+    #ourbusiness div div{
+        border: 0.5px solid #bbb;
+        border-radius: 20px;
+        margin: 23px;
+        padding-bottom: 24px;
+    }
+    #ourbusiness h2{
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    #ourbusiness h2, #ourbusiness p:nth-child(2){
+        width: 640px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        border: none !important;
+    }
+    #ourbusiness p:nth-child(2){
+        margin-block: 24px 64px;
+        width: 100%;
+        text-align: center !important;
+    }
+    #ourbusiness div div a{
+        margin-top: 1rem !important;
+        font-size: var(--text-font-size);
+        border: none !important;
+        padding-inline: 1rem;
+        color: var(--smashtech-color);
+    }
+    #ourbusiness img{
+        height: 196px;
+    }
+      
+    /* OUR TEAM */
+    #whoweare, #ourbusiness, #ourteam{
+        padding: 24px !important;
+    }
+    #ourbusiness div, #ourteam div{
+        gap: 32px !important;
+    }
+    #ourbusiness h2, #ourteam h2{
+        width: 100%;
+        font-size: 24px;
+        margin-block: 34px;
+    }
+    #ourbusiness div div, #ourteam div div{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    #ourteam img{
+        height: 224px;
+    }
+    #ourteam h3{
+        font-size: 21px;
+        padding: 0;
+        font-weight: 600;
+        margin-block: 0 10px !important;
+    }
+    #ourbusiness p, #ourteam p{
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0;
+        text-align: left !important;
+    }
+    #ourteam div div div{ /* The bottom div for each flex item */
+        padding-inline: 12.18px;
+        width: 100%;
+        margin-top: 0;
+    }
+    #ourteam div div{ 
+        /* background-color: yellow; */
+    }
+
+    /* === COURSES === */
+    .courses{
+        padding: 1.2rem !important; 
+        width: 100% !important;
+    }
+    .courses h1{
+        font-size: var(--courses-h1);
+        font-weight: 500;
+    }
+    .course{
+        margin-inline: 0 !important;
+    }
+    .course_top, .course_content{
+        padding-inline: .85rem;
+    }
+    .course_top{
+        color:#0d0d0d; 
+        height: 6.6rem;
+        align-content: end;
+        padding-block: .5rem;
+        border-radius: 3px 3px 0 0;
+    }
+    .course_content{
+        border: 1px solid #ddd;
+        border-top: 0;
+        padding-block: 1.05rem;
+        border-radius: 0 0 3px 3px;
+    }
+    .course_content h1{
+        margin-block: 1.4rem 0;
+    }
+    .course_content p a{
+        font-size: calc(var(--courses-h1) * .68) !important;
+    }
+    .course_content p{
+        color: #343434 !important;
+        font-size: calc(var(--courses-h1) * .68) !important;
+    }
+    .course button{
+        padding: .7rem;
+        width: 100%;
+        text-align: left;
+        color: #fff;
+        border-radius: 3px;
+        font-weight: 300;
+    }
+    .course .btn{
+        font-size: .8rem;
+        font-weight: normal;
+        border: 1px solid #666;
+        color: #666;
+        text-align: left !important;
+        padding-block: .25rem;
+        padding-inline: .5rem;
+        border-radius: 3px;
+        margin-block: 0 1.3rem;
+    }
+
+    /* zyzics_company_banner */
+    .zyzics_company_banner{
+        padding: var(--content-edge);
+    }
+    .zyzics_company_banner h1{
+        width: 80%;
+        font-family: var(--title-font) !important;
+        text-transform: uppercase;
+        font-size: calc(var(--h2-font-size) * 1.08);
+        line-height: 92%;
+    }
+    .zyzics_company_banner .contacts{
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        padding-block: 1rem;
+        /* background-color: red; */
+    
+    }
+    .contacts h6 a{
+        font-size: var(--h2-font-size) !important;
+    }
+    
+    #banner{
+        display: block !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    /* zyzics__banner */
+    .zyzics__banner{
+        background-color: var(--zyzics-color);
+        margin: var(--content-edge-mobile) !important;
+        margin-top: 0 !important;
+        padding: var(--content-edge-mobile);
+        padding-block: 2rem .5rem;
+        border-radius: 1.2rem;
+    }
+    .zyzics__banner h1{
+        font-size: 4.1rem;
+        color: black;
+        line-height: 88%;
+    }
+    .zyzics__banner p{
+        font-size: var(--body-font-size);
+        width: 100%;
+        color: #222e;
+        margin-block: 1.5rem 1.9rem;
+        line-height: 145%;
+    }
+
+    /* Zyzics Buttons */
+    .zyzics-btn{
+        background: var(--zyzics-blue);
+        border-radius: 1.95rem;
+        padding: .8rem 1.1rem;
+        color: white !important;
+        font-size: 1rem;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: normal;
+    }
+    .zyzics__banner h2{
+        font-size: calc(var(--h1-font-size) * .7);
+        color: black;
+        width: 90%;
+        margin-bottom: 2.2rem;
+    }
+    .zyzics__banner h5{
+        color: var(--text-color);
+        width: 90%;
+        margin-top: 1rem
+    }
+    .zyzics_ittraining-subbanner{
+        font-size: calc(var(--body-font-size) * 1.15);
+        width: 90%;
+        color: #111e;
+        margin-block: .7rem;
+    }
+    .zyzics_ittraining-subbanner p{
+        margin-block: .2rem;
+    }
+    
+    /* Social Icons */
+    .zyzics__social{
+        display: flex;
+        column-gap: .75rem;
+        align-items: center;
+        padding: var(--content-normal) !important;
+        padding-block: 2rem !important;
+    }
+    .zyzics__social2{
+        display: flex;
+        column-gap: .2rem;
+        align-items: center;
+    }
+    .zyzics__social-link{
+        display: inline-flex;
+        background-color: var(--container-color);
+        padding: .65rem;
+        margin-inline: .1rem;
+        border-radius: 10rem;
+        color: #fff;
+        font-size: 1rem;
+        transition: .4s;
+    }
+    
+    /* Sub-banner Black */
+    .zyzics_ittraining-black{
+        height: 25vh;
+        margin: var(--content-edge) !important;
+        margin-top: 1rem !important;
+    }
+}
+
+/* ================================== */
+
+/* 2. TABLETS */
+@media screen and (min-width: 577px) and (max-width: 767px){
+    :root{
+        --courses-h1: 1.9rem;
+        --content-edge-mobile: .8rem;
+    }   
+
+    /* ZYZICS Reusable Grid Columns */
+    .zy-c1-sm, .zy-c2-sm, .zy-c3-sm, .zy-c4-sm{
+        display: grid;
+    }    
+    .zy-c1-sm{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .zy-c2-sm{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .zy-c3-sm{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .zy-c4-sm{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .zyzics__banner h1{
+        width: 75%;
+    }
+}
+
+
+/* ============================ */
+
+/* 3. MEDIUM SCREENS like iPad Pro */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    :root{
+        --courses-h1: 1.9rem;
+        --content-edge-mobile: .8rem;
+    }  
+    
+    /* ZYZICS Reusable Grid Columns */
+    .zy-c1-md, .zy-c2-md, .zy-c3-md, .zy-c4-md, .zy-c6-md{
+        display: grid;
+    }
+    .zy-c1-md{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .zy-c2-md{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .zy-c3-md{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .zy-c4-md{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .zy-c6-md{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    body{
+        /* background-color: blue !important */
+    }
+    .zyzics__banner{
+        padding: var(--content-edge);
+        margin-inline: calc(var(--content-edge-mobile) * 3) !important;
+    }
+    .zyzics__banner h1{
+        width: 80%;
+        font-size: 9rem;
+    }
+    .zyzics__banner p{
+        font-size: 1.8rem !important;
+        margin-block: 2rem 3rem;
+    }
+    p, .zyzics-btn{
+        font-size: 1.8rem !important;
+    }
+    .zyzics-btn{
+        padding: 1.1rem 2rem;
+        border-radius: 5rem;
+    }
+
+}
+
+
+/* 4. SMALL LAPTOP SCREENS */
+@media screen and (min-width: 1025px) and (max-width: 1206px){
+    body{
+        /* background-color: orange; */
+    }
+}
+/* 5. NORMAL LAPTOP SCREENS (E.G MY OWN) UP TO LARGE SCREENS*/
+@media screen and (min-width: 1207px){
+    body{
+        /* background-color: pink; */
+    }
+}

@@ -1,0 +1,256 @@
+/* ======= HEADER & NAV ======== */
+/* header{
+  width: 100%;
+  background: grey;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+#logo{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* background-color: red; */
+}
+#top{
+  display: flex;
+  justify-content: left !important;
+  gap: 3.2rem;
+}
+.navbar {
+  /* background-color: green; */
+  /* padding: 10px 20px; */
+  display: flex;
+  align-content: center !important;
+  padding-block: .5rem;
+  gap: 0;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center !important;  
+  margin-top: 1rem;
+  /* padding-block: 1.5rem !important; */
+}
+
+.menu-item {
+  position: relative;
+}
+ul.menu{
+  padding: 0;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  /* padding: 9px; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  /*  */
+  /* font-family: var(--main-font) !important; */
+  font-size: 1.25rem;
+  line-height: 91%;
+  color: var(--zyzics-deep-blue);
+  font-family: var(--main-font-semibold) !important;
+  /* font-weight: bold !important; */
+  letter-spacing: -0.05rem;
+}
+
+.menu-button:hover,
+.menu-button.active {
+  color: #d2173f; 
+}
+
+.caret {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+  font-size: 0.65rem;
+}
+
+.caret.rotate {
+  transform: rotate(180deg);
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  z-index: 1000;
+  display: flex;
+  gap: 20px;
+  width: 680px;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.dropdown-angle {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  box-shadow: -3px -3px 3px rgba(0, 0, 0, 0.05);
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.dropdown-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dropdown-content ul {
+  list-style: none;
+  flex: 2;
+  padding: 0;
+}
+
+.dropdown-content ul li {
+  padding: 8px 0;
+}
+
+.dropdown-content ul li a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dropdown-content ul li span {
+  display: block;
+  color: #666;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.featured {
+  flex: 1;
+  padding-left: 20px;
+  border-left: 1px solid #ddd;
+}
+
+.featured h3 {
+  margin-bottom: 10px;
+}
+
+.featured img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.featured a {
+  display: block;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+/* Hide the trigger from large screens */
+.dvs-header__trigger{
+  display: none !important;
+}
+
+.dropdown h6{
+  color: #000;
+  font-size: 1.25rem;
+  /* font-size: var(--h3-font-size); */
+}
+.dropdown li a{
+  font-size: .95rem;
+  color: var(--zyzics-deep-blue) !important;
+  /* letter-spacing: -0.05rem; */
+}
+.dropdown li a:hover{
+  color: #d2173f !important;
+}
+
+/* === RESPONSIVE NAV === */
+
+/* == 1. SMALLEST, 2. SMALL TABLETS, AND 3. MEDIUM SCREENS LIKE IPAD PRO */
+@media screen and (max-width: 1024px){
+  /* work on this later! Place the sections properly on mobile */
+  .contacts, .categories, .courses{
+    display: none !important;
+  }
+  #logo{
+    gap: .8rem;
+  }
+
+  #logo h1{
+    font-size: 100% !important;
+  }
+
+  /* On mobile, hide the horizontal menu */
+  .menu{
+    display: none;
+  }
+  .navbar{
+    margin: 0 !important;
+    width: 100% !important;
+    display: flex;
+    padding: 1.1rem;
+  }
+
+  /* Now, display the trigger on smaller screens */
+  .dvs-header__trigger{
+    display: block !important;
+  }
+
+  /* When trigger is clicked, display the menu */
+  .menu.is-open{
+    display: block;
+    width: 100% !important;
+    /* height: 90vh; */
+    border-top: 1px solid #666;
+    margin-top: 1.1rem;
+    padding-top: 1rem;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    background-color: white;
+    z-index: 1000;
+    min-height: 40vh;
+  }
+  .dropdown{
+    width: 100% !important;
+    left:0 !important;
+    gap: 0 !important;
+  }
+  .dropdown-content{
+    display: flex;
+    flex-direction: column;
+  }
+  .featured{
+  }  
+}
+
+
+/* == 2. Small Tablets */
+@media screen and (min-width: 577px) and (max-width: 767px){
+  /* work on this later! Place the sections properly on mobile */
+  .contacts, .categories, .courses{
+    display: none !important;
+  }
+
+}
+
+/* == 2. Medium Screens like iPad Pro */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  /* work on this later! Place the sections properly on mobile */
+  .contacts, .categories, .courses{
+    display: none !important;
+  }
+
+}

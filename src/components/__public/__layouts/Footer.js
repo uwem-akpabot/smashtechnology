@@ -1,95 +1,103 @@
 import { UilTrophy, UilSitemap, UilGlobe, UilDesktop, UilLaptop, UilLock, UilArrowRight } 
   from '@iconscout/react-unicons';
 import { Link } from 'react-router-dom';
+import logo from '../../../assets/images/logo/footer-logo.png';
 
 const Footer = (props) => {
   return (
-    <div className="sections" id="footer">
-      <div className="welcome">
-        <div>
-          <h3>{props.project} {props.company}</h3>
-          <p>RC. 7921450. JESUS is LORD above all</p>
-        </div>
+    <div className="sections footer">
+      <div className="row">
+          <div className="col-md-6 col-lg-3">
+              <div className="footer-about">
+                  <h2>Location</h2>
+                  <p>2 King Jaja Street, Works & Housing, 3rd Avenue Gwarinpa Abuja Nigeria</p>
+
+                  <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15228.404107111688!2d7.411400921809833!3d9.112733853676842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e750c10f4e05f%3A0xaaf486ef52d3055c!2sSmash%20Technology%20Nigeria!5e0!3m2!1sen!2sng!4v1734024734016!5m2!1sen!2sng"
+      width="85%" 
+      height="193" 
+      style={{ border: 0, allowfullscreen: "", loading: "lazy", referrerpolicy: "no-referrer-when-downgrade" }}></iframe>
+    
+              </div>
+          </div>
+          <div className="col-md-6 col-lg-9">
+              <div className="row">                                
+                  <div className="col-md-6 col-lg-4">
+                      <div className="footer-link">
+                          <h2>Company</h2>
+                          <Link to="/">Home</Link>
+                          <Link to="/about">About Us</Link>
+                          <Link to="/">Our Businesses</Link>
+                          <Link to="/">Investment Opportunities</Link>
+                          <Link to="/">Careers</Link>
+                          <Link to="/">Latest News</Link>
+                      </div>
+                  </div>
+                  <div className="col-md-6 col-lg-4">
+                      <div className="footer-link">
+                          <h2>Our Businesses</h2>
+                          <Link to="/">Smashwise</Link>
+                          <Link to="/about">Ridesmash</Link>
+                          <Link to="/">SmashApartments</Link>
+                          <Link to="/">SmashBookings</Link>
+                          <Link to="/">SmashFood</Link>
+                          <Link to="/">SmashTravels</Link>
+                          <Link to="/">Qiimeet</Link>
+                          <Link to="/">Owenas</Link>
+                      </div>
+                  </div>
+                  <div className="col-md-6 col-lg-4">
+                      <div className="footer-link">
+                          <h2>Contact Us</h2>
+                          <Link to="/" className="_070smash">070<span>SMASHTECH</span></Link>
+                          <a href="tel:+2348125242452" title="Click to call">+2349097403297</a>
+                          <a href="tel:+2348125242452" title="Click to call">+2349097403297</a>
+                          <a href="tel:+2348125242452" title="Click to call">+2349097403297</a>
+                          <a href="mailto:hello@smashtechgroup.com" title="Click to send a mail">hello@smashtechgroup.com</a>
+                      </div>
+                  </div>
+                  {/* <div className="col-md-6 col-lg-4">
+                      <div className="footer-contact">
+                          <h2>Contact Us</h2>
+                          <p><i className="fa fa-map-marker-alt"></i>73 Adekunle Fajuyi Road, 
+                              <br /> &nbsp; &nbsp; &nbsp; (Remilekun Building), 
+                              <br /> &nbsp; &nbsp; &nbsp; Adamasingba, Ibadan, 
+                              <br /> &nbsp; &nbsp; &nbsp; Oyo State, Nigeria</p>
+                          <p><i className="fa fa-phone-alt"></i> <a href="tel:+2348063404097" 
+                              style={{ color: '#999' }} title="Click to call">+234 806-340-4097</a>, 
+                              <br /> &nbsp; &nbsp; &nbsp; 
+                              <a href="tel:+2348125242452" title="Click to call">+234 812-524-2452</a></p>
+                          <p><a href="mailto:legalcardinal@protonmail.com" title="Click to send a mail">
+                              <i className="fa fa-envelope"></i>legalcardinal@protonmail.com</a></p>
+                          <div className="footer-social">
+                              <a href="https://x.com/legalcardinal"><i className="fab fa-twitter"></i></a>
+                              <a href="https://web.facebook.com/legalcardinal"><i className="fab fa-facebook-f"></i></a>
+                              <a href="https://www.instagram.com/legalcardinal"><i className="fab fa-instagram"></i></a>
+                              <a href="https://wa.me/+2348125242452" title="Click to chat on WhatsApp"><i className="fab fa-whatsapp"></i></a>
+                          </div>
+                      </div>
+                  </div> */}
+              </div>
+          </div>
       </div>
+      
+      <hr />
 
-      <div className="zy-c4">
-        <div className="">
-          <div className="feats-inner">
-            <h4>Company</h4>
-          </div>          
-          <ul>
-            <li><Link to="/">About Us</Link></li>
-            <li><Link to="/">How We're Different</Link></li>
-            <li><Link to="/">Clients' Reviews</Link></li>
-            <li><Link to="/">Products</Link></li>
-            <li><Link to="/">Services</Link></li>
-            <li><Link to="/">Team</Link></li>
-            <li><Link to="/">Contact</Link></li>
-            <li><Link to="/">Partners</Link></li>
-            <li><Link to="/">Pricing</Link></li>
-            <li><Link to="/">Login</Link></li>
-          </ul>
+      <div className="footer-menu">
+        <div className="row">
+          <div className="col-md-6">
+            <Link to="/" id="logo">
+              <img src={logo} style={{width: '73px', height: '73px' }} title="Logo" alt="Logo" />
+            </Link>
+          </div>
+          <div className="col-md-6 footer-menu">
+            <div className="f-menu">
+              <a href="http://legalcardinal.com.ng/privacypolicy">Privacy Policy</a>
+              <a href="http://legalcardinal.com.ng/termsandconditions">Terms of Use</a>
+              <a href="http://legalcardinal.com.ng/about#team">Blog</a>
+            </div>
+          </div>
         </div>
-
-        <div className="">
-          <div className="feats-inner">
-            <h4>Services</h4>
-          </div>          
-          <ul>
-            <li><Link to="/">IT Training</Link></li>
-            <li><Link to="/">Software Development</Link></li>
-            <li><Link to="/">Website Design</Link></li>
-            <li><Link to="/">IT Consulting</Link></li>
-          </ul>
-
-          <br />
-          <div className="feats-inner">
-            <h4>Products</h4>
-          </div>          
-          <ul>
-            <li><Link to="/">Zyzics School Software</Link></li>
-            <li><Link to="/">Web Design Portfolio</Link></li>
-            <li><Link to="/">Software Dev Portfolio</Link></li>
-            <li><Link to="/">IT Training Portfolio</Link></li>
-          </ul>
-        </div>
-
-        <div className="">
-          <div className="feats-inner">
-            <h4>Course Delivery</h4>
-          </div>          
-          <ul>
-            <li><Link to="/">Live Online Class</Link></li>
-            <li><Link to="/">Self-Paced Study</Link></li>
-            <li><Link to="/">On-Campus Class</Link></li>
-          </ul>
-
-          <br />
-          <div className="feats-inner">
-            <h4>Training Types</h4>
-          </div>          
-          <ul>          
-            <li><Link to="/">Regular</Link></li>
-            <li><Link to="/">Corporate</Link></li>
-            <li><Link to="/">Private / Executive</Link></li>
-          </ul>
-        </div>
-
-        <div className="">
-          <div className="feats-inner">
-            <h4>Pricing </h4>
-          </div>          
-          <ul>
-            <li><Link to="/">For Web Design</Link></li>
-            <li><Link to="/">For Software Devt.</Link></li>
-            <li><Link to="/">For Zyzics Apps</Link></li>
-            <li><Link to="/">For IT Consulting</Link></li>
-            <li><Link to="/">For Corporate Training</Link></li>
-            <li><Link to="/">For Executive Training</Link></li>
-            <li><Link to="/">Retainer / Maintenance</Link></li>
-          </ul>
-        </div>
-
       </div>
     </div>
   )

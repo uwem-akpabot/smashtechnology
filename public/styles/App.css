@@ -126,6 +126,14 @@ p{
 }
 
 /* NAVBAR */
+nav{
+  font-family: 'Montserrat' !important;
+}
+#logo span{
+  /* font-size: var(--h1-font-size); */
+  
+}
+
 
 /* BANNER */
 .video-banner {
@@ -256,12 +264,17 @@ p{
   padding-inline: 1rem;
   color: var(--smashtech-color);
 }
+#ourteam div div a{
+  /* margin-top: 2px !important; */
+  font-size: var(--text-font-size);
+  color: var(--smashtech-color);
+}
 
 /* OUR TEAM */
 #ourteam div{
   gap: 64px;
 }
-#ourteam h2{
+#ourteam h2, #ourcorevalues h2, #ourcorepurpose h2{ /* reusable section title */
   width: 640px;
   text-align: center;
   align-items: center;
@@ -297,6 +310,36 @@ p{
   padding-block: 30px;
 }
 
+/* OUR CORE VALUES */
+#ourcorevalues div{
+  gap: 96px;
+  align-items: center;
+}
+#ourcorevalues img{
+  width: 100%;
+  height: 441px;
+  border-radius: 20px;
+}
+#ourcorevalues h3{
+  font-size: 2rem;
+  padding: 0;
+  font-weight: 600;
+  line-height: 39px;
+  margin-bottom: 24px !important;
+}
+#ourcorevalues p{
+  font-size: 24px;
+  line-height: 40px;
+  margin: 0;
+  text-align: left !important;
+}
+
+/* OUR CORE PURPOSE */
+#ourcorepurpose > div{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 145px;
+}
 
 /* ZY GRIDS */
 .zy-c1, .zy-c2, .zy-c3, .zy-c4, .zy-c5, .zy-c6, .zy-c1_2, .zy-c2_1, .zy-c3_1, .zy-c3_2, 
@@ -324,11 +367,11 @@ p{
 
 /* FOOTER */
 .footer {
-  position: relative;
-  margin-top: 45px;
-  padding-top: 180px;
-  background: #121518;
-  color: #ffffff;
+  background-color: #020066;
+  color: #fff;
+}
+.sections.footer{
+  padding-block: 96px 64px !important;
 }
 
 .footer .footer-about,
@@ -343,30 +386,41 @@ p{
 .footer .footer-link h2,
 .footer .footer-contact h2{
   position: relative;
-  margin-bottom: 30px;
-  font-size: 25px;
+  margin-bottom: 24px;
+  font-size: 24px;
   font-weight: 600;
-  color: #aa9166;
+  color: #fff;
 }
 
 .footer .footer-link a {
   display: block;
   margin-bottom: 10px;
-  color: #999999;
+  color: #fff;
   transition: .3s;
+}
+._070smash, .footer-link span{
+  font-size: 2rem;
+}
+.footer-link span{
+  color: var(--smashtech-color);
+}
+.footer hr{
+  height: 3px;
+  background: #fff !important;
+  opacity: .7;
 }
 
 .footer .footer-link a::before {
-  position: relative;
+  /* position: relative;
   content: "\f105";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  margin-right: 10px;
+  margin-right: 10px; */
 }
 
 .footer .footer-link a:hover {
-  color: #aa9166;
   letter-spacing: 1px;
+  color: var(--smashtech-color);
 }
 
 .footer .footer-contact p i {
@@ -399,7 +453,8 @@ p{
 .footer .footer-menu .f-menu {
   position: relative;
   padding: 15px 0;
-  background: #000000;
+  color: #fff !important;
+  /* background: #000000; */
   font-size: 0;
   text-align: center;
 }
@@ -426,7 +481,11 @@ p{
 .footer .copyright {
   padding: 30px 15px;
 }
-
+.footer p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #ddd;
+}
 .footer .copyright p {
   margin: 0;
   color: #999999;

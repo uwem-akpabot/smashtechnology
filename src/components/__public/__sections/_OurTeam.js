@@ -1,7 +1,9 @@
 import { UilTrophy, UilSitemap, UilGlobe, UilDesktop, UilLaptop, UilLock, UilArrowRight } 
   from '@iconscout/react-unicons';
 import { Link } from 'react-router-dom';
-import team1 from './../../../assets/images/ourteam/Charity.png';
+import ceo from './../../../assets/images/ourteam/CEO.png';
+import gracious from './../../../assets/images/ourteam//Gracious.png';
+import charity from './../../../assets/images/ourteam/Charity.png';
 import biz2 from './../../../assets/images/ourbusiness/Food.png';
 // import biz3 from './../../../assets/images/ourbusiness/SmashTravels.png';
 
@@ -13,7 +15,7 @@ const OurTeam = () => {
         
       <div className="zy-c2 zy-c1-sm zy-c1-xs">
         <div className="">
-            <img src={biz2} />
+            <img src={ceo} />
 
             <div>
               <h3>Chief Executive Officer</h3>
@@ -31,7 +33,7 @@ const OurTeam = () => {
             </div>
         </div>
         <div className="">
-          <img src={biz2} />
+          <img src={gracious} />
 
           <div>
             <h3>Head of Media & Communications</h3>
@@ -77,7 +79,7 @@ const OurTeam = () => {
           </div>
         </div>
         <div className="">
-          <img src={team1} />
+          <img src={charity} />
 
           <div>
             <h3>Team Lead SmashTravels</h3>

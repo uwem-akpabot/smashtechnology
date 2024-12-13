@@ -9,6 +9,7 @@ import Training_Categories from '../__public/__sections/Training_Categories';
 import Nav from '../__public/__layouts/zNav';
 import Navbar from '../__public/__layouts/Navbar';
 import Footer from '../__public/__layouts/Footer';
+import Map from '../__public/__sections/_Map';
 import Services_Categories from '../__public/__sections/Services_Categories';
 import New_Banner from '../__public/__sections/New_Banner';
 import New_Navbar from '../__public/__layouts/New_Navbar';
@@ -19,7 +20,7 @@ import WorkPortfolio from '../__public/__sections/WorkPortfolio';
 import OurBusiness from '../__public/__sections/_OurBusiness';
 import OurTeam from '../__public/__sections/_OurTeam';
 import CoreValues from '../__public/__sections/_CoreValues';
-import Map from '../__public/__sections/_Map';
+import OurCorePurpose from '../__public/__sections/_OurCorePurpose';
 
 const Home = (props) => {
   useEffect(() => {
@@ -40,11 +41,11 @@ const Home = (props) => {
     <Banner />
     <WhoWeAre />
     <OurBusiness />
-    {/* skipped */}
+    <OurCorePurpose />
     <OurTeam />
+    <CoreValues />
     <Map />
     <Footer />
-    {/* <CoreValues /> */}
     
     {/* <Subjects />
 

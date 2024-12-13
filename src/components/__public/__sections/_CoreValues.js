@@ -1,41 +1,51 @@
 import { UilTrophy, UilSitemap, UilGlobe, UilDesktop, UilLaptop, UilLock, UilArrowRight } 
   from '@iconscout/react-unicons';
 import { Link } from 'react-router-dom';
-import biz1 from './../../../assets/images/ourbusiness/Ridesmash.png';
-import biz2 from './../../../assets/images/ourbusiness/Food.png';
-import biz3 from './../../../assets/images/ourbusiness/SmashTravels.png';
+import core1 from './../../../assets/images/corevalues/1.png';
+import core2 from './../../../assets/images/corevalues/2.png';
+import core3 from './../../../assets/images/corevalues/3.png';
+import core4 from './../../../assets/images/corevalues/4.png';
 
 const CoreValues = () => {
   return (
     <>
-    <div className="sections" id="ourbusiness">
-        <h2>Our Business</h2>
-        <p>Smash Technology is a group of innovative app-based subsidiaries designed to simplify and enhance your daily life. 
-            We've transformed our services from manual operations to a tech-driven experience, offering a variety of essential 
-            apps for both local and international users.
-        </p>
+    <div className="sections" id="ourcorevalues">
+        <h2>Our Core Values</h2>
         
-      <div className="zy-c3 zy-c1-sm zy-c1-xs">
+      <div className="zy-c2 zy-c1-sm zy-c1-xs">
         <div className="">
-            <img src={biz1} />
-
-            <h3>Ridesmash</h3>
-            <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
-            <Link to="/about">Learn more <UilArrowRight /></Link>
+          <img src={core1} />
         </div>
         <div className="">
-            <img src={biz2} />
-
-            <h3>Smashfood</h3>
-            <p>Delicious meals, delivered fast. Order your favorites and enjoy culinary delights at your doorstep.</p>
-            <Link to="/about">Learn more <UilArrowRight /></Link>
+          <h3>Customer Service Experience</h3>
+          <p>As a world-class organization, we understand that we exist to serve and satisfy our customers. 
+              Accordingly, our customer orientation reflects intimacy, integrity and learning.</p>
+        </div>
+        
+        <div className="">
+          <h3>Entrepreneurship</h3>
+          <p>We continuously seek and develop new business in tech, employing state-of-the-art methods to retain our market leadership.</p>
         </div>
         <div className="">
-            <img src={biz3} />
+          <img src={core2} />
+        </div>
 
-            <h3>Smash Travels</h3>
-            <p>Effortless bookings and memorable journeys await. Let us handle the details—your adventure starts here.</p>
-            <Link to="/about">Learn more <UilArrowRight /></Link>
+        <div className="">
+          <img src={core3} />
+        </div>
+        <div className="">
+          <h3>Excellence through teamwork</h3>
+          <p>We are a large organization, working together to deliver the best products and services to our valuable customers and stakeholders. 
+            To achieve this, we demonstrate teamwork, respect, and meritocracy.</p>
+        </div>
+        
+        <div className="">
+          <h3>Leadership</h3>
+          <p>We thrive on being leaders in our various businesses, markets and communities. 
+            To drive this, we focus on continuous improvement, partnership and professionalism.</p>
+        </div>
+        <div className="">
+          <img src={core4} />
         </div>
 
       </div>

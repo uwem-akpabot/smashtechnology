@@ -81,6 +81,7 @@
     }
     #whoweare > div{
         gap: 0 !important;
+        padding-bottom: 48px !important;
     }
     #whoweare > div > div:nth-child(2){
         margin-top: 0 !important;
@@ -107,14 +108,14 @@
     }
     .small-container{
         background-color: var(--smashtech-deep-grey);
-        border-radius: 40px;
+        border-radius: 30px;
         width: 100%;
         height: 200px;
         margin-block: 17px;
     }
     .line-container{
         background-color: #F8A580;
-        border-radius: var(--smash-border-radius);
+        border-radius: 50px;
         width: 70%;
         height: 32px;
     }
@@ -125,9 +126,15 @@
     /* OUR BUSINESS */
     #ourbusiness div div{
         border: 0.5px solid #bbb;
-        border-radius: 20px;
+        border-radius: 13.35px;
         margin: 23px;
         padding-bottom: 24px;
+    }
+    #ourteam div div img{
+        border-radius: 13.35px 13.35px 0 0;
+    }
+    #ourteam div div div{
+        border-radius: 0 0 13.35px 13.35px;
     }
     #ourbusiness h2{
         margin-bottom: 0 !important;
@@ -158,7 +165,7 @@
     }
       
     /* OUR TEAM */
-    #whoweare, #ourbusiness, #ourteam{
+    #whoweare, #ourbusiness, #ourteam, .footer{
         padding: 24px !important;
     }
     #ourbusiness div, #ourteam div{
@@ -174,7 +181,8 @@
         margin: 0 !important;
     }
     #ourteam img{
-        height: 224px;
+        max-width: 100%; 
+        height: auto; 
     }
     #ourteam h3{
         font-size: 21px;
@@ -193,8 +201,28 @@
         width: 100%;
         margin-top: 0;
     }
+    #ourteam div div a{
+        font-size: calc(var(--text-font-size) * 1.1);
+        border: none !important;
+        color: var(--smashtech-color);
+    }
+    #ourbusiness div div a{
+        font-size: calc(var(--text-font-size) * 1.1);
+    }
     #ourteam div div{ 
         /* background-color: yellow; */
+    }
+
+    /* FOOTER */
+    .footer{
+        width: 100% !important;
+        margin: 0;
+        padding: 0; 
+    }
+    .footer iframe{
+        width: 100% !important;
+        margin: 0;
+        padding: 0; 
     }
 
     /* === COURSES === */

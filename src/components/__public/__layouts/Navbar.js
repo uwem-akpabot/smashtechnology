@@ -94,7 +94,7 @@ const Navbar = (props) => {
 
         <li className="menu-item" title="Browse investment opportunities">
           <button onClick={() => toggleDropdown('investment')} className="menu-button">
-            Investment <span className={`caret ${openDropdown === 'investment' ? 'rotate' : ''}`}>▼</span>
+            Investment Opportunity<span className={`caret ${openDropdown === 'investment' ? 'rotate' : ''}`}>▼</span>
           </button>
           {openDropdown === 'investment' && (
             <div className="dropdown">
@@ -138,7 +138,8 @@ const Navbar = (props) => {
       {/* style={{background: 'red'}} */}
       <div className="contacts" >
           <div>
-            Right
+            <button className="smashtech-button">Get In Touch</button>
+
             {/* <a href="https://wa.me/message/GMNIQ5YNLZRFD1" className="zyzics__social-link" title="Chat with us on WhatsApp"><UilWhatsapp /></a>
             <a href="" className="zyzics__social-link" title="Send us an email"><UilEnvelope /></a>
             <a href="https://www.youtube.com/@zyzics-it-training" className="zyzics__social-link" title="Watch tutorials on our YouTube channel"><UilYoutube /></a>

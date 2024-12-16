@@ -15,25 +15,38 @@
   gap: 1rem;
   /* background-color: red; */
 }
-#top{
+#logo div, #logo span{  
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #020066;
+}
+#logo span{
+  color: var(--smashtech-color);
+}
+#whoweare .desktop span{
+  color: var(--smashtech-color);
+}
+/* #top{
   display: flex;
   justify-content: left !important;
   gap: 10rem;
-  /* background-color: pink; */
-}
+  background-color: pink;
+} */
+
 .navbar {
-  font-family: 'Montserrat', sans-serif !important;
-  display: flex;
-  align-content: center !important;
-  padding-block: .5rem;
-  background-color: #fff;
-  /* background-color: red; */
-  gap: 0;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  display: flex;
+  justify-content: space-between; /* Space out the 3 columns */
+  align-items: center; /* Vertically center content */
+  background-color: #fff;
+  padding: 10px 20px;
   z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', sans-serif !important;
+  padding-inline: 4.9rem;
 }
 
 .menu {
@@ -53,29 +66,24 @@ ul.menu{
   padding: 0;
 }
 
-.menu-button {
-  background: none;
-  border: none;
-  /* padding: 9px; */
+.menu-button{
+  background: #fff;
   cursor: pointer;
-  display: flex;
   align-items: center;
-  font-size: 20px;
-  line-height: 91%;
-  color: var(--zyzics-deep-blue);
-  /* font-weight: bold !important; */
-  letter-spacing: -0.05rem;
+  font-size: 20px !important;
+  color: #393838; 
+  display: flex;
 }
 
 .menu-button:hover,
 .menu-button.active {
-  color: #d2173f; 
+  color: var(--smashtech-color); 
 }
 
 .caret {
   margin-left: 5px;
   transition: transform 0.3s ease;
-  font-size: 0.65rem;
+  font-size: 20px;
 }
 
 .caret.rotate {
@@ -92,9 +100,10 @@ ul.menu{
   z-index: 1000;
   display: flex;
   gap: 20px;
-  width: 680px;
+  width: 350px;
   padding: 20px;
   flex-direction: column;
+  margin-top: 3.1rem;
 }
 
 .dropdown-angle {
@@ -109,7 +118,6 @@ ul.menu{
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
 }
-
 .dropdown-content {
   display: flex;
   gap: 20px;
@@ -173,12 +181,13 @@ ul.menu{
   /* font-size: var(--h3-font-size); */
 }
 .dropdown li a{
-  font-size: .95rem;
-  color: var(--zyzics-deep-blue) !important;
-  /* letter-spacing: -0.05rem; */
+  line-height: 2rem;
+  font-weight: 500;
+  color: #393838 !important;
+  font-size: 18px !important;
 }
 .dropdown li a:hover{
-  color: #d2173f !important;
+  color: var(--smashtech-color) !important;
 }
 
 /* === RESPONSIVE NAV === */

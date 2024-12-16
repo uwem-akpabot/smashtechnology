@@ -1,6 +1,10 @@
 import {Routes, Route} from 'react-router-dom';
 import ProtectedRoute from '../components/ProtectedRoute'; // Import the ProtectedRoute
 import Home from './pages/Home';
+import About from './pages/About';
+import People from './__public/__sections/About/People';
+import InvestorRelations from './__public/__sections/About/InvestorRelations';
+import Footer from './__public/__layouts/Footer';
 
 // Public
 // import Registration from './pages/member/Registration';
@@ -18,8 +22,9 @@ const Main = () => {
       <Routes>
         {/* Public */}
         <Route path="" element={<Home company={company} />} />
-        
-        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/about" element={<About company={company} />} />
+        <Route path="/smash-people" element={<People company={company} />} />
+        <Route path="/investor-relations" element={<InvestorRelations company={company} />} />
 
         {/* DETAIL PAGES */}
         {/* <Route path="/course-category/:category_id" element={<CategoryDetail project={project} />} />
@@ -29,6 +34,7 @@ const Main = () => {
         <Route path="/manage-courses" element={<ManageCourses />} />
         <Route path="/course-sample" element={<CourseSample project={project} />} /> */}
       </Routes>
+      <Footer />
     </>
   );
 }

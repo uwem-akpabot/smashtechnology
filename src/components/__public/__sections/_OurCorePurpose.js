@@ -10,7 +10,7 @@ import core4 from './../../../assets/images/corevalues/4.png';
 const OurCorePurpose = () => {
   return (
     <>
-    <div className="sections" id="ourcorepurpose">
+    <div className="sections autoShow" id="ourcorepurpose">
         <h2>Our Core Purpose</h2>
         
       <div className="">

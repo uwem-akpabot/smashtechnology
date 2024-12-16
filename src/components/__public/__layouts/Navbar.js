@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { UilYoutube, UilEnvelope, UilPhone, UilWhatsapp, UilApps } from '@iconscout/react-unicons';
+import { UilBars } from '@iconscout/react-unicons';
 import {Link} from 'react-router-dom';
 import logo from '../../../assets/images/logo/smash-logo.png';
 
@@ -32,12 +32,15 @@ const Navbar = (props) => {
 
   return (
     <nav className="navbar">
-      <div id="top">
+      {/* <div id="top"> */}
       <Link to="/" id="logo">
-        <img src={logo} style={{width: '50px', height: '50px' }} title="Logo" alt="Logo" /> <span>Smash</span> Technology
+        <img src={logo} className="logo" style={{width: '65.21px', height: '65.21px' }} title="Logo" alt="Logo" /> 
+        <div>
+          <span>Smash </span>Technology
+        </div>
       </Link>
       
-      <li className="dvs-header__trigger" onClick={toggleMenu}><UilApps /></li>
+      <li className="dvs-header__trigger" onClick={toggleMenu}><UilBars /></li>
       
       {/* style={{background: 'green'}} */}
       <ul className={`menu ${isOpen ? 'is-open' : ''}`}>
@@ -46,20 +49,20 @@ const Navbar = (props) => {
             onClick={() => toggleDropdown('company')}
             className={`menu-button ${openDropdown === 'company' ? 'active' : ''}`}
           >
-            Company <span className={`caret ${openDropdown === 'companyn' ? 'rotate' : ''}`}>▼</span>
+            Company <span className={`caret ${openDropdown === 'company' ? 'rotate' : ''}`}>▼</span>
           </button>
           {openDropdown === 'company' && (
             <div className="dropdown">
               {/* <div className="dropdown-angle"></div> */}
               <div className="dropdown-content">
                 <ul className="">
-                    <li><Link to="/">About Us</Link></li>
-                    <li><Link to="/">Our Core Values</Link></li>
-                    <li><Link to="/">Commitment to Sustainability</Link></li>
-                    <li><Link to="/">Commitment To Quality</Link></li>
-                    <li><Link to="/">Exceptional Customer Service</Link></li>
-                    <li><Link to="/">Investor Relations</Link></li>
-                    <li><Link to="/">People</Link></li>
+                    <li><Link to="/about">About Us</Link></li>
+                    <li><Link to="/about#corevalues">Our Core Values</Link></li>
+                    <li><Link to="/about#commitment1">Commitment to Sustainability</Link></li>
+                    <li><Link to="/about#commitment2">Commitment To Quality</Link></li>
+                    <li><Link to="/about#">Exceptional Customer Service</Link></li>
+                    <li><Link to="/investor-relations">Investor Relations</Link></li>
+                    <li><Link to="/smash-people">People</Link></li>
                 </ul>
               </div>
             </div>
@@ -94,7 +97,7 @@ const Navbar = (props) => {
 
         <li className="menu-item" title="Browse investment opportunities">
           <button onClick={() => toggleDropdown('investment')} className="menu-button">
-            Investment Opportunity<span className={`caret ${openDropdown === 'investment' ? 'rotate' : ''}`}>▼</span>
+            Investment<span className={`caret ${openDropdown === 'investment' ? 'rotate' : ''}`}>▼</span>
           </button>
           {openDropdown === 'investment' && (
             <div className="dropdown">
@@ -111,7 +114,7 @@ const Navbar = (props) => {
         </li>
 
         <li className="menu-item" title="Browse our careers">
-          <Link to="/">Careers</Link>
+          <Link to="/" className="menu-button">Careers</Link>
         </li>
 
         <li className="menu-item" title="Our media">
@@ -133,12 +136,12 @@ const Navbar = (props) => {
         </li> 
                
       </ul>
-      </div>
+      {/* </div> */}
 
       {/* style={{background: 'red'}} */}
       <div className="contacts" >
           <div>
-            <button className="smashtech-button">Get In Touch</button>
+            <button className="smashtech-button swipe-button">Get In Touch</button>
 
             {/* <a href="https://wa.me/message/GMNIQ5YNLZRFD1" className="zyzics__social-link" title="Chat with us on WhatsApp"><UilWhatsapp /></a>
             <a href="" className="zyzics__social-link" title="Send us an email"><UilEnvelope /></a>

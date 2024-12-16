@@ -18,53 +18,24 @@
 
 /* === VARIABLES === */
 :root{
-    /* Colors */
-    --zyzics-color: #FFDF00; /* hsl(52, 100%, 50%); rgba(255, 223, 0, .8) */
-    --zyzics-blue: #0020FF; /* hsl(232, 100%, 50%); rgba(0, 32, 255, .8) */
-    --zyzics-grey: #e6daff;
-    --zyzics-deep-blue: #17226d;
-    /* --zyzics-grey: #e8e8e8; */
-    --content-edge: 0 1.8rem;
-    --content-normal: 0 4.9rem;
-    --content-inner: 0 10rem;
-    --zyzics-border-radius: 1.95rem;
+  --content-edge: 0 1.8rem;
+  --content-normal: 0 4.9rem;
+  --content-inner: 0 10rem;
+  --zyzics-border-radius: 1.95rem;
 
-    /* Colors */
-    --smashtech-font-family: 'Montserrat', sans-serif !important;
-    --smashtech-color: #F34B02;
-    --smashtech-bg-grey: #F8F8FB;
-    --smashtech-deep-grey: #393838;
-    --p-color: #393838;
+  /* Colors */
+  --smashtech-font-family: 'Montserrat', sans-serif !important;
+  --smashtech-color: #F34B02;
+  --smashtech-color2: #020066;
+  --smashtech-bg-grey: #F8F8FB;
+  --smashtech-deep-grey: #393838;
+  --p-color: #393838;
 
-    /* Sizes */
-    --h1-font-size: 6rem; 
-    --text-font-size: 1.1rem;;
+  /* Sizes */
+  --h1-font-size: 6rem; 
+  --text-font-size: 1.1rem;;
 
-    --smash-border-radius: 50px;
-    
-
-
-
-    --hue: 250;
-    /* #336eeb == Almost the same, so beautiful, for btns*/  
-    --text-color: hsl(var(--hue), 8%, 18%);
-
-    /* .5rem = 8px | 1rem = 16px ... */
-    --header1-font-size: 7.81rem;
-    --h2-font-size: 3rem;
-    --title-font-size: 3rem;
-    /* --title-font-family: 'Inter Regular'; */
-    --h3-font-size: 2.1rem;
-    --h1-font-size-mobile: 2.6rem;
-    /* --h1-font-size: 2.25rem; */
-    --body-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
-
-    /* Font family */
-    --main-font: 'Degular', serif;
-    --title-font: 'Degular', serif;
-    --main-font-semibold: 'Degular-Semibold';
+  --smash-border-radius: 50px;
 }
 
 /* === RESETS ==== */
@@ -78,7 +49,7 @@
     transition: all .2s linear;
 }
 *::selection{
-    background: var(--zyzics-blue);
+    background: var(--smashtech-color2);
     color: #fff;
 }
 html{
@@ -124,12 +95,22 @@ p{
   text-transform: capitalize;
   font-size: var(--text-font-size);
 }
+.smashtech-button:hover{
+  background-color: var(--smashtech-color2);
+  color: #fff;
+  transition: all .2s linear;
+}
+
+
+/* =================== */
+/* HOMEPAGE */
+/* =================== */
 
 /* BANNER */
 .video-banner {
   position: relative;
   width: 100%;
-  height: 74vh; 
+  height: 85vh; 
   display: flex;
   background-color: var(--smashtech-deep-grey);
   padding: var(--content-normal);
@@ -193,7 +174,10 @@ p{
 #whoweare h2.mobile{
   display: none;
 }
-#whoweare span{
+#whoweare h2 span{
+  color: var(--smashtech-color2) !important;
+}
+#whoweare p span{
   font-weight: bold;
   font-size: calc(var(--text-font-size) * 1.25);
 }
@@ -225,6 +209,11 @@ p{
   margin: 23px;
   padding-bottom: 24px;
 }
+#ourbusiness div div:hover > h3, #ourteam div div:hover > h3{
+  color: var(--smashtech-color);
+  /* box-shadow: 0 2px 4px #bbb; */
+  /* border: none; */
+}
 #ourbusiness h2, #ourbusiness p:nth-child(2){
   width: 640px;
   text-align: center;
@@ -239,6 +228,20 @@ p{
 #ourbusiness img{
   height: 295px;
   width: 100%;
+}
+.business-container {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.business-container img {
+  width: 100%;
+  height: 295px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.business-container:hover img {
+  transform: scale(1.05);
 }
 #ourbusiness div div h3, #ourbusiness div div p{
   padding-inline: 1rem;
@@ -265,7 +268,7 @@ p{
 #ourteam div{
   gap: 64px;
 }
-#ourteam h2, #ourcorevalues h2, #ourcorepurpose h2{ /* reusable section title */
+#ourteam h2, #ourcorevalues h2, #ourcorepurpose h2, #missionvision h2{ /* reusable section title */
   width: 640px;
   text-align: center;
   align-items: center;
@@ -334,6 +337,31 @@ p{
   text-align: left !important;
 }
 
+/* MISSIONVISION */
+#missionvision h2{
+  margin-bottom: 21px;
+}
+#missionvision p{
+  font-size: 24px;
+  line-height: 50px;
+  padding-bottom: 227px;
+  height: 390px;
+}
+#missionvision .swipe{
+  box-shadow: 0 2px 4px #bbb;
+  border-radius: 20px;
+  margin: 23px;
+  padding-inline: 24px;
+  padding-block: 63px;
+}
+#missionvision div div:hover > h3{
+  color: var(--smashtech-color);
+  /* box-shadow: 0 2px 4px #bbb; */
+}
+#missionvision img{
+  width: 184px;
+}
+
 /* OUR CORE PURPOSE */
 #ourcorepurpose > div{
   display: grid;
@@ -355,7 +383,7 @@ p{
 }
 .vertical-line {
   width: 1px;
-  border: 3px solid #E5E5EF; /* Line thickness */
+  border: 1.5px solid #E5E5EF; /* Line thickness */
   height: 160px; /* Line height, adjust to fit the gap */
   margin: auto;
   margin-top: -8px;
@@ -420,7 +448,7 @@ p{
 
 /* FOOTER */
 .footer {
-  background-color: #020066;
+  background-color: var(--smashtech-color2);
   color: #fff;
 }
 .sections.footer{
@@ -461,14 +489,6 @@ p{
   height: 3px;
   background: #fff !important;
   opacity: .7;
-}
-
-.footer .footer-link a::before {
-  /* position: relative;
-  content: "\f105";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  margin-right: 10px; */
 }
 
 .footer .footer-link a:hover {
@@ -567,348 +587,191 @@ p{
 }
 
 
+.swipe-button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  background-color: var(--smashtech-color); /* Orange background */
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
 
-/* ZY NAVS */
-.zy-nav{
+/* Blue background swipe effect */
+.swipe-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start off-screen */
+  width: 100%;
+  height: 100%;
+  background-color: var(--smashtech-color2); /* Blue background */
+  transition: left 0.6s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother swipe effect */
+  z-index: -1; /* Ensure the background is behind the text */
+}
+
+/* Reveal the blue swipe on hover */
+.swipe-button:hover::before {
+  left: 0; /* Move the background into view */
+}
+
+/* Change text color on hover */
+.swipe-button:hover {
+  color: #fff; /* Keep text white during hover */
+}
+
+
+
+
+/* logo rotate animaton */
+.logo{
+  animation: rotate 2s linear infinite; 
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  to {
+    transform: rotate(-360deg); /* Complete a full rotation */
+  }
+}
+
+/* section animations */
+/* .autoShow{
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
+}
+@keyframes autoShowAnimation{
+  from{
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+} */
+
+/* =================== */
+/* OTHER PAGES */
+/* =================== */
+.banner_otherpages {
+  position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 1.3rem;
-  /* addons */
-  /* padding: var(--content-normal); */
-  padding-block: .2rem;
-  /* background-color: red; */
-  /* horizontal left by default */
-}
-.nav-center{
-  justify-content: center; /* horizontal center */
-}
-.nav-right{
-  justify-content: right; /* horizontal right */
-}
-.nav-fixed{
-  position: fixed;
-}
-
-.zy-nav a{
-  font-size: calc(var(--body-font-size) * 1.01) !important;
-}
-
-/* Zyzics Buttons */
-.zyzics-btn{
-  background: var(--zyzics-blue);
-  border-radius: 1.95rem;
-  padding: .8rem 1.1rem;
-  color: white !important;
-  font-size: 1rem;
-  line-height: 19px;
   text-align: center;
-  letter-spacing: normal;
-}
-.zyzics-btn:hover{
-  color: #fff !important;
-  background-color: hsl(var(--hue), 98%, 40%);
-}
-
-
-/* Banners */
-.zyzics_company_banner{
-  padding-inline: 1.9rem;
-  padding-block: 1.05rem !important;
-}
-.zyzics_company_banner h1{
-  font-family: var(--title-font) !important;
-  text-transform: uppercase;
-  margin-top: 0.5rem;
-}
-.zyzics_company_banner .contacts{
-  display: flex;
-  align-items: center; /* aligns items vertically - baseline (top), center, end (bottom) */
-  justify-content: right; /* aligns items horizontally - left, center, right */
-  gap: 1.3rem;
-}
-.contacts h6{
-  margin: 0 !important;
-}
-
-/* zyzics_ittraining-banner */
-.zyzics_ittraining-banner{
-  background-color: var(--zyzics-color);
-  border-radius: var(--zyzics-border-radius);
-  /* height: 71vh; */
-  align-content: center;
-  padding: 2.8rem;
-  padding-block: 2.6rem .35rem;
-  margin: var(--content-edge);
-}
-.zyzics_ittraining-banner h1, .header_1{
-  font-size: var(--header1-font-size);
-  font-family: var(--main-font) !important;
-  color: black;
-  line-height: 91px;
-  font-weight: 700;
-  letter-spacing: -4px;
-}
-.header_1{
-  font-size: calc(var(--header1-font-size) * 0.7);
-  font-family: var(--main-font) !important;
-  /* font-size: 2.5rem; */
-  letter-spacing: -0.3rem;
-  width: 50%;
-  padding-block: 2.8rem 0 !important;
-  margin: var(--content-inner) !important;
-  line-height: 3.85rem;
-}
-.zyzics_ittraining-banner p{
-  font-size: calc(var(--body-font-size) * 1.05);
-  width: 90%;
-  color: #000e;
-  margin-block: 1.8rem 2.3rem;
-  line-height: 145%;
-}
-.zyzics_ittraining-banner h2{
-  font-size: calc(var(--h1-font-size) * .7);
-  color: black;
-  width: 90%;
-  margin-bottom: 2.2rem;
-}
-/* .zyzics_ittraining-banner h5{
-  color: var(--text-color);
-  width: 90%;
-  margin-top: 1rem
-} */
-
-
-/* Sub-banner Black */
-.zyzics_ittraining-black{
-  border-radius: 3px;
-  /* height: 40vh; */
-  /* align-content: center; */
-  margin: var(--content-edge);
-  margin-left: 0 !important;
-}
-.zyzics_ittraining-subbanner{
-  font-size: calc(var(--body-font-size) * 1.15);
-  padding-block: 1.5rem;
-}
-.zyzics_ittraining-subbanner h4, .zyzics_company_banner h1{
-  font-family: var(--main-font) !important;
-  font-size: calc(var(--h3-font-size) * 0.85) !important;
-  line-height: 91%;
-  color: var(--zyzics-deep-blue);
-  letter-spacing: -0.05rem;
-}
-.zyzics_ittraining-subbanner p{
-  margin-block: .2rem;
-  color: #222e;
-}
-.video-container {
-  display: flex;
-  justify-content: center; /* Centers the video horizontally */
+  /* background-image: url('../../src/assets/images/corevalues/1.png');  */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff !important; /* Ensure text contrasts well */
   width: 100%;
-  background-color: white !important;
+  height: 533px; 
+  margin-top: 7rem !important;
 }
 
-.video-container video {
-  border-radius: 3px;
-  max-width: 100%; /* Ensures the video is responsive */
+/* Add an overlay for better readability */
+.banner_otherpages::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1; /* Ensure the overlay is below the text */
 }
-/* video{
-  width: 80%;
-  margin-top: -2.5rem !important;
-} */
 
-/* Social Icons */
-.zyzics__social{
-  display: flex;
-  column-gap: .75rem;
+/* Style the text to be above the overlay */
+.banner_otherpages h1 {
+  position: relative;
+  z-index: 2; /* Text is above the overlay */
+  font-size: 128px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.banner_otherpages span {
+  color: #fff; /* Highlight span text with a distinct color */
+}
+
+
+
+
+/* =================== */
+/* ABOUT PAGE */
+/* =================== */
+
+/* ABOUT - MISSION/VISION */
+#about_missionceo h2, #about_people h2, #about_investorrelations h2{ /* reusable section title */
+  width: 640px;
+  text-align: center;
   align-items: center;
-  padding: var(--content-normal) !important;
-  padding-block: 2rem !important;
+  justify-content: center;
+  margin: auto;
+  border: none !important;
+  margin-bottom: 64px;
+  width: 1000px;
 }
-.zyzics__social2{
-  display: flex;
-  column-gap: .2rem;
-  align-items: center;
+#about_missionceo p, #about_people p, #about_investorrelations p{
+  margin-top: 0;
+  color: #393838;
+  width: 1000px;
+  margin: auto
 }
-.zyzics__social-link{
-  display: inline-flex;
-  background-color: var(--container-color);
-  padding: .3rem !important;
-  margin-inline: .1rem;
-  border-radius: 10rem;
-  /* border-radius: .25rem; */
-  color: #fff;
-  font-size: 1rem;
-  transition: .4s;
+.ceo-div{
+  background-color: #FEF6F2;
 }
-.zyzics__social-link:nth-child(3){
-  background-color: #d2173f;
-  /* color: #d2173f; */
-  /* background-color: rgba(216, 22, 63, .1); */
-}
-.zyzics__social-link:nth-child(1){
-  background-color: #25D366;
-  /* color: var(--blue-color);
-  background-color: rgba(0, 22, 216, .1); */
-}
-.zyzics__social-link:nth-child(2){
-  background-color: #03a9f4;
-  /* color: #03a9f4;
-  background-color: rgba(3, 169, 244, .1); */
-}
-.zyzics__social-link:nth-child(4){
-  background-color: #285da1;
-  /* color: #285da1;
-  background-color: rgba(40, 93, 161, .1); */
+.commitment-div{
+  background-color: #F8F8FB;
 }
 
-.zyzics__social-link:hover:nth-child(3){
-  color: #d2173f; 
-  background-color: rgba(216, 22, 63, .1);
-  /* background-color: #d2173f; */
+
+/* =================== */
+/* ABOUT - INVESTOR RELATIONS */
+/* =================== */
+.slider-div{  
+  background-color: #F8F8FB;
+  padding-block: 96px;
+  padding-bottom: 200px;
 }
-.zyzics__social-link:hover:nth-child(1){
-  color: #25D366;
-  background-color: rgba(0, 216, 26, .1);
-  /* background-color: var(--blue-color); */
+.slider-div h2, .slider-div p{  
+  text-align: center;
 }
-.zyzics__social-link:hover:nth-child(2){
-  color: #03a9f4;
-  background-color: rgba(3, 169, 244, .1);
-  /* background-color: #03a9f4; */
+.slider-p{
+  margin-bottom: 100px;
+  margin-top: 0;
+  color: #393838;
+  width: 1000px;
+  margin: auto;
 }
-.zyzics__social-link:hover:nth-child(4){
-  color: #285da1;
-  background-color: rgba(40, 93, 161, .1);
-  /* background-color: #285da1; */
+img.big{
+  width: 424px;
+  height: 600px;
+  /* left: 1040px; */
+  padding: 32px 0px 0px 0px;
+  gap: 10px;
+  border-radius: 30px;
 }
-.zyzics__social-link:hover{
-  color: #fff;
+#about_investorrelations img.small{
+  width: 291px;
+  height: 96px;
+  padding: 16px 24px 16px 24px;
+  gap: 10px;
+  border-radius: 50px;
 }
 
-/* === CATEGORIES === */
-.categories{
-  padding: var(--content-normal);
-  /* background-color: #e6daff; */
-  background-color: black;
-  padding-block: 0 2.5rem;
-}
-.categories img{
+/* =================== */
+/* ABOUT - PEOPLE */
+/* =================== */
+#about_people img{
   width: 100%;
-  border-radius: var(--zyzics-border-radius);
+  height: 900px;
+  border-radius: 30px;
 }
-.categories .subtext{
-  padding-top: .5rem !important;
-  padding: var(--content-inner);
-  margin-bottom: 1.65rem;
-}
-
-/* === COURSES === */
-.courses h1{
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.course{
-  margin-inline: 0 1rem;
-  margin-block: 1rem;
-}
-.course_top, .course_content{
-  padding-inline: .85rem;
-}
-.course_top{
-  border-radius: 3px 3px 0 0; 
-  /* color:#0d0d0d;
-  align-content: end; */
-}
-.course_top .zyzics_ittraining-subbanner{
-  align-content: end !important;
-  height: 6.6rem;
-  padding-block: .5rem;
-}
-.course_content{
-  border: 1px solid #ddd;
-  border-top: 0;
-  padding-block: 1.05rem;
-  border-radius: 0 0 3px 3px;
-}
-.course_content h1{
-  margin-block: 1.4rem 0;
-}
-.course_content p a{
-  color: #343434 !important
-}
-.course button{
-  padding: .7rem;
-  width: 100%;
-  text-align: left;
-  color: #fff;
-  border-radius: 3px;
-  font-weight: 300;
-}
-.course .btn{
-  font-size: .8rem;
-  font-weight: normal;
-  border: 1px solid #666;
-  color: #666;
-  text-align: left !important;
-  padding-block: .25rem;
-  padding-inline: .5rem;
-  border-radius: 3px;
-  margin-block: 0 .65rem;
-}
-
-/* Course colours */
-.course:nth-child(1) .course_top, 
-  .course:nth-child(8) .course_top, 
-  .course:nth-child(10) .course_top{
-  background-color: #c5ebff;
-}
-.course:nth-child(2) .course_top, 
-  .course:nth-child(7) .course_top, 
-  .course:nth-child(9) .course_top{
-  background-color: #c4ff96;  
-}
-.course:nth-child(3) .course_top, 
-  .course:nth-child(5) .course_top, 
-  .course:nth-child(11) .course_top{
-  background-color: #e6daff;
-}
-.course:nth-child(4) .course_top, 
-  .course:nth-child(6) .course_top, 
-  .course:nth-child(12) .course_top{
-  background-color: #fbceff;  
-}
-
-/* Button colours */
-.course:nth-child(1) button, 
-  .course:nth-child(8) button, 
-  .course:nth-child(10) button{
-  background-color: #002c6f;
-}
-.course:nth-child(2) button, 
-  .course:nth-child(7) button, 
-  .course:nth-child(9) button{
-  background-color: #163200;  
-}
-.course:nth-child(3) button, 
-  .course:nth-child(5) button, 
-  .course:nth-child(11) button{
-  background-color: #48008c;
-}
-.course:nth-child(4) button,
-  .course:nth-child(6) button, 
-  .course:nth-child(12) button{
-  background-color: #620040;  
-}
-
-/* Course-content colours */
-.course:nth-child(2) .course_content, 
-  .course:nth-child(4) .course_content, 
-  .course:nth-child(6) .course_content, 
-  .course:nth-child(8) .course_content, 
-  .course:nth-child(10) .course_content, 
-  .course:nth-child(12) .course_content{
-  background-color: #f6f6f6
-}
-
-/* ================================== */

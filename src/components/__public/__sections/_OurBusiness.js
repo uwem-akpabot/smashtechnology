@@ -15,28 +15,34 @@ const OurBusiness = () => {
             apps for both local and international users.
         </p>
         
-      <div className="zy-c3 zy-c1-sm zy-c1-xs">
-        <div className="">
-            <img src={biz1} />
+      <div className="zy-c3 zy-c1-sm zy-c1-xs autoShow">
+        <Link to="/about" title="Ridesmash">
+          <div className="business-container">
+              <img src={biz1} />
 
-            <h3>Ridesmash</h3>
-            <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
-            <Link to="/about">Learn more <UilArrowRight /></Link>
-        </div>
-        <div className="">
+              <h3>Ridesmash</h3>
+              <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
+              <Link to="/about">Learn more <UilArrowRight /></Link>
+            </div>
+        </Link>
+        <Link to="/about" title="Smashfood">
+          <div className="business-container">
             <img src={biz2} />
 
             <h3>Smashfood</h3>
             <p>Delicious meals, delivered fast. Order your favorites and enjoy culinary delights at your doorstep.</p>
             <Link to="/about">Learn more <UilArrowRight /></Link>
-        </div>
-        <div className="">
+          </div>
+        </Link>
+        <Link to="/about" title="Smash Travels">
+          <div className="business-container">
             <img src={biz3} />
 
             <h3>Smash Travels</h3>
             <p>Effortless bookings and memorable journeys await. Let us handle the details—your adventure starts here.</p>
             <Link to="/about">Learn more <UilArrowRight /></Link>
-        </div>
+          </div>
+        </Link>
 
       </div>
     </div>

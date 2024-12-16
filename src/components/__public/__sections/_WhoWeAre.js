@@ -8,9 +8,9 @@ const WhoWeAre = () => {
     <div className="sections" id="whoweare">
       <div className="zy-c2 zy-c1-sm zy-c1-xs">
 
-        <h2 className="mobile">Who we are</h2>
+        <h2 className="mobile autoShow">Who we are</h2>
 
-        <div className="zy-c2 zy-c2-xs splash">
+        <div className="zy-c2 zy-c2-xs splash autoShow">
             <div>
                 <div className="small-container"></div>
                 <div className="line-container"></div>
@@ -23,7 +23,7 @@ const WhoWeAre = () => {
 
         <div className="">
             <div>
-              <h2 className="desktop">Who we are</h2>
+              <h2 className="desktop">Who <span>we are</span></h2>
             </div>
             <p><span>Smash Technology</span> is a tech group of companies focused on employing technology to service its clients locally and globally. Initially, the brand focused on Transport 
                 Investment across the country and beyond before pivoting into other viable sectors such as E-hailing, E-commerce, Food delivery, Booking platform, Virtual Office 
@@ -35,7 +35,7 @@ const WhoWeAre = () => {
             </p>
             <br />
 
-            <Link to="/about" className="smashtech-button">Learn More</Link>
+            <Link to="/about" className="smashtech-button swipe-button">Learn More</Link>
         </div>
 
       </div>

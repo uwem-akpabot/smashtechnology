@@ -15,9 +15,9 @@ const OurCorePurpose = () => {
         
       <div className="">
         <div className="cir">
-          <img src={biz2} />
+          {/* <img src={biz2} /> */}
         </div>
-        <div className="flex">
+        <div className="flex zy-c2 zy-c1-md zy-c1-sm zy-c1-xs">
           <div className="">
             <h1>1</h1>
             <div class="vertical-line"></div>

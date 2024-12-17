@@ -1,37 +1,14 @@
 /* == 1. SMALLEST SCREENS, 2. SMALL TABLET SCREENS, AND SMALL SCREENS LIKE IPAD PRO */
 @media screen and (max-width: 1024px){
     :root{
-        --courses-h1: 1.9rem;
-        --content-edge-mobile: .8rem;
-        --content-edge: 3rem 2.2rem;
 
-        /* --biggest-font-size: 8em;
-        --h1-font-size: 2.3rem;
-        --h2-font-size: 1.6rem;
-        --normal-font-size: 1.7rem; */
     }    
     *{
         margin: 0;
         padding:0;
         box-sizing: border-box;
     }   
-    
-    /* ZYZICS Reusable Grid Columns */
-    .zy-c1-xs, .zy-c2-xs, .zy-c3-xs, .zy-c4-xs{
-        display: grid;
-    }    
-    .zy-c1-xs{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .zy-c2-xs{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .zy-c3-xs{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .zy-c4-xs{
-        grid-template-columns: repeat(4, 1fr);
-    }
+
     html{
         font-size: 85%; /* change for different device sizes */
     }
@@ -41,6 +18,70 @@
         margin: 0 !important;
     }
 
+    
+    /* ZYZICS Reusable Grid Columns */
+    .zy-c1-xs, .zy-c2-xs, .zy-c3-xs, .zy-c4-xs{
+        display: grid;
+    }    
+    .zy-c1-xs{ grid-template-columns: repeat(1, 1fr); }
+    .zy-c2-xs{ grid-template-columns: repeat(2, 1fr); }
+    .zy-c3-xs{ grid-template-columns: repeat(3, 1fr); }
+    .zy-c4-xs{ grid-template-columns: repeat(4, 1fr); }
+    
+    /* Sections */
+    #whoweare, #ourbusiness, #ourcorevalues, #ourteam, #missionvision, .footer{
+        max-width: 100%;
+        padding: 24px !important;
+        margin: 0;
+    }
+
+    /* Section Titles */
+    #ourbusiness h2, #ourteam h2, #ourcorevalues h2, #ourcorepurpose h2, #missionvision h2{
+        max-width: 100%;
+        font-size: 24px;
+        margin-block: 34px 16px;
+    }
+
+
+    #ourteam img, #ourcorevalues img{
+        /* max-width: 100%; */
+        width: auto;
+        height: auto; 
+    }    
+    #ourcorevalues div, #missionvision div{
+        gap: 0 !important;
+    }
+    #ourcorevalues h3{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24.38px;
+        text-align: center;
+        padding-top: 24px;
+        margin: 0 !important;
+        /* padding-bottom: 0 !important; */
+        /* background-color: red; */
+    }
+    #ourcorevalues p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: center !important;
+        margin: 1rem 0 0 0;
+    }
+    #ourcorevalues img{
+        margin-block: 5px
+    }
+
+    #missionvision .swipe{
+        border: 2px solid #bbb;
+    }
+    #missionvision .swipe p{
+        font-size: 14px;
+    }
+    #missionvision .swipe img{
+        margin-top: 0 !important;
+    }
+    
     /* BANNER */
     .video-banner{
         width: 100%;
@@ -165,25 +206,14 @@
     }
       
     /* OUR TEAM */
-    #whoweare, #ourbusiness, #ourteam, .footer{
-        padding: 24px !important;
-    }
     #ourbusiness div, #ourteam div{
         gap: 32px !important;
-    }
-    #ourbusiness h2, #ourteam h2{
-        width: 100%;
-        font-size: 24px;
-        margin-block: 34px;
     }
     #ourbusiness div div, #ourteam div div{
         width: 100% !important;
         margin: 0 !important;
     }
-    #ourteam img{
-        max-width: 100%; 
-        height: auto; 
-    }
+    
     #ourteam h3{
         font-size: 21px;
         padding: 0;

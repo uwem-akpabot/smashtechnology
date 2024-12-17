@@ -56,13 +56,45 @@ html{
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 4rem;
-  /* font-size: 100%; */
   font-size: 100%;  /* change for different device sizes */
 }
 img{
   max-width: 100%;
   height: auto;
 } 
+
+/* GRIDS */
+.c1, .c2, .c3, .c4, .c5, .c6{
+  display: grid;
+}
+.c1{ grid-template-columns: repeat(1, 1fr); }
+.c2{ grid-template-columns: repeat(2, 1fr); }
+.c3{ grid-template-columns: repeat(3, 1fr); }
+.c4{ grid-template-columns: repeat(4, 1fr); }
+.c5{ grid-template-columns: repeat(5, 1fr); }
+.c6{ grid-template-columns: repeat(6, 1fr); }
+
+/* Section title */
+
+.zy-c1, .zy-c2, .zy-c3, .zy-c4, .zy-c5, .zy-c6, .zy-c1_2, .zy-c2_1, .zy-c3_1, .zy-c3_2, 
+.zy-c5_2{
+  display: grid;
+}
+.zy-c1{ grid-template-columns: repeat(1, 1fr); }
+.zy-c2{ grid-template-columns: repeat(2, 1fr); }
+.zy-c3{ grid-template-columns: repeat(3, 1fr); }
+.zy-c4{ grid-template-columns: repeat(4, 1fr); }
+.zy-c5{ grid-template-columns: repeat(5, 1fr); }
+.zy-c6{ grid-template-columns: repeat(6, 1fr); }
+/* diff dimensions */
+.zy-c1_2{ grid-template-columns: 1fr 2fr; column-gap: .5rem; }
+.zy-c2_1{ grid-template-columns: 2fr 1fr; column-gap: .5rem; }
+.zy-c3_1{ grid-template-columns: 3fr 1fr; column-gap: .5rem; }
+.zy-c3_2{ grid-template-columns: 3fr 2fr; column-gap: .5rem; }
+.zy-c5_2{ grid-template-columns: 67% 33%; }
+
+
+
 .sections{
   padding: var(--content-normal);
   padding-block: 6rem;
@@ -440,11 +472,6 @@ p{
 .zy-c3_2{ grid-template-columns: 3fr 2fr; column-gap: .5rem; }
 .zy-c5_2{ grid-template-columns: 67% 33%; }
 
-.zyzics-caption{
-  align-content: center;
-  padding: var(--content-normal);
-}
-
 
 /* FOOTER */
 .footer {
@@ -727,11 +754,104 @@ p{
 }
 .ceo-div{
   background-color: #FEF6F2;
+  align-items: center;
 }
-.commitment-div{
-  background-color: #F8F8FB;
+.ceo-div img{
+  width: 100%;
+}
+.ceo-div p, .ceo-div h3, .ceo-div h4{
+  padding: var(--content-normal);
+}
+.ceo-div hr{
+  margin: var(--content-normal)
+}
+.ceo-div p{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.ceo h3{
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48.76px;
+}
+.ceo-div h4{
+  margin-block: 16px 24px;
+}
+.sections.commitment-quality{
+  margin-bottom: 0;
+}
+.commitment-quality{
+  padding: var(--content-normal);
+  gap: 96px;
+}
+.exceptional-customer{
+  padding: var(--content-normal);
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 80%;
+  margin: 0 auto;
+}
+.exceptional-customer div{
+  margin-top: -12rem;
+}
+.exceptional-customer img{
+  width: 600px;
+  height: 600px;
+  /* border-radius: 30px; */
+  margin-bottom: 99px;
+}
+.exceptional-customer p{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.exceptional-customer h2{
+  padding-block: 152px 4px;
+  margin-bottom: 0;
+}
+.tab-container {
+  margin: 2rem auto;
+  max-width: 800px;
 }
 
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 64px;
+}
+
+.tab-button {
+  /* background-color: #ff7043;
+  color: var(--smashtech-color);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer; */
+  font-size: 1.4rem;
+  /* transition: background-color 0.3s, color 0.3s; */
+  width: 225px;
+  padding: 16px;
+  gap: 10px;
+  border-radius: 50px;
+}
+
+.tab-button.active {
+  background-color: #ffebe1;
+  color: #ff7043;
+}
+.tab-button:hover {
+  background-color: #ffebe1;
+}
+.tab-content {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #555;
+}
 
 /* =================== */
 /* ABOUT - INVESTOR RELATIONS */

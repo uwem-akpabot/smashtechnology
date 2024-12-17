@@ -28,11 +28,11 @@ const MissionVision = () => {
           slidesPerView: 2, /* 2. TABLETS @media screen and (min-width: 577px) and (max-width: 767px) */
           },
           350: {
-              slidesPerView: 1.3, /* 1. SMALL/MOBILE @media screen and (min-width: 351px) and (max-width: 576px) */
+              slidesPerView: 1, /* 1. SMALL/MOBILE @media screen and (min-width: 351px) and (max-width: 576px) */
           },
           // when window width is >= 0px (default for all sizes)
           0: {
-            slidesPerView: 1.3,
+            slidesPerView: 1,
           },
         }}
         autoplay={{

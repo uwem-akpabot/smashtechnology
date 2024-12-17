@@ -29,7 +29,7 @@ const Home = (props) => {
 
     <OurBusiness />
 
-    <OurCorePurpose />
+    {/* <OurCorePurpose /> */}
 
     <OurTeam />
 

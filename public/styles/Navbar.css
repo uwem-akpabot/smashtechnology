@@ -52,7 +52,7 @@
 .menu {
   list-style: none;
   display: flex;
-  gap: 64px;
+  gap: 4rem;
   align-items: center !important;  
   margin-top: 1rem;
   padding-block: 1.5rem !important;

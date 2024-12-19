@@ -273,8 +273,39 @@
         font-size: 145%;  
     }
     .sections{
-        padding: var(--content-edge);
-        padding-block: 4rem;
+        padding: var(--content-edge) !important;
+        padding-block: 3rem !important;
+    }
+    nav{
+        padding: var(--content-edge) !important;
+        padding-block: 0 !important;
+    }    
+    .menu {
+        gap: 2.2rem !important;
+      }
+    .dropdown{
+        margin-top: 2.4rem !important;
+    }
+    .dropdown a{
+        font-size: 12rem !important;
+    }
+    .dropdown {
+        padding-block: .4rem !important;
+    }
+    .dropdown-content ul li {
+        padding: .3rem 0 !important;
+    }
+    .dropdown-content ul li a {
+        /* background-color: blue !important; */
+        font-size: 1.05rem !important;
+        font-weight: normal !important;
+    }
+    button.menu-button, #careers{
+        font-size: 110% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        gap: 0 !important;
+        display: flex;
     }
     #whoweare{
         /* background-color: pink !important; */
@@ -289,12 +320,55 @@
     html{
         font-size: 90%;  /* change for different device sizes */
     }
+    .smashtech-button{
+        font-size: 95% !important;  
+    }
+    #ourcorevalues p{
+        font-size: 115%;  
+    }
+    h2{
+        font-size: 188%;  
+    }
+    h3{
+        font-size: 145%;  
+    }
     .sections{
-        padding: var(--content-edge);
-        padding-block: 4rem;
+        padding: var(--content-edge) !important;
+        padding-block: 3rem !important;
+    }
+    nav{
+        padding: var(--content-edge) !important;
+        padding-block: 0 !important;
+    }    
+    .menu {
+        gap: 2.2rem !important;
+      }
+    .dropdown{
+        margin-top: 2.4rem !important;
+    }
+    .dropdown a{
+        font-size: 12rem !important;
+    }
+    .dropdown {
+        padding-block: .4rem !important;
+    }
+    .dropdown-content ul li {
+        padding: .3rem 0 !important;
+    }
+    .dropdown-content ul li a {
+        /* background-color: blue !important; */
+        font-size: 1.05rem !important;
+        font-weight: normal !important;
+    }
+    button.menu-button, #careers{
+        font-size: 110% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        gap: 0 !important;
+        display: flex;
     }
     #whoweare{
-        /* background-color: red !important; */
+        /* background-color: pink !important; */
     }
     #whoweare .tester{        
         gap: 2.5rem !important

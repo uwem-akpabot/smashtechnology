@@ -115,7 +115,7 @@ const Navbar = (props) => {
         </li>
 
         <li className="menu-item" title="Browse our careers">
-          <Link to="/careers" className="menu-button">Careers</Link>
+          <Link to="/careers" className="menu-button" id="careers">Careers</Link>
         </li>
 
         <li className="menu-item" title="Our media">

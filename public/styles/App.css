@@ -44,7 +44,7 @@
     text-decoration: none;
     outline: none; border: none;
     font-size: var(--body-font-size);
-    transition: all .2s linear;
+    /* transition: all .2s linear; */
 }
 *::selection{
     background: var(--smashtech-color2);

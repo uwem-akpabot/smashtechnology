@@ -31,6 +31,46 @@ const Home = (props) => {
 
     {/* <OurCorePurpose /> */}
 
+    <section class="core-purpose">
+  <div class="circle"></div>
+
+  <div class="content">
+    <div class="item">
+      <div class="number">1</div>
+      <div class="text">
+        <h3>Ease Your Stress</h3>
+        <p>
+          Our core purpose is to ensure you live an easy and stress-free life. We are breaking down those
+          difficult-to-achieve tasks into a single press of a button.
+        </p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="number">2</div>
+      <div class="text">
+        <h3>Make A Difference</h3>
+        <p>
+          We want you to be unique and different. We offer services that will help you make a difference
+          and stand out.
+        </p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="number">3</div>
+      <div class="text">
+        <h3>Get 100% Enjoyment</h3>
+        <p>
+          We ensure you get 100% satisfaction and first-rate customer service. Our customer support is
+          always available 24/7.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
     <OurTeam />
 
     <CoreValues />

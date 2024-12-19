@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { UilTrophy, UilSitemap, UilGlobe, UilDesktop, UilLaptop, UilLock, UilArrowRight } 
   from '@iconscout/react-unicons';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ceo21 from './../../../../assets/images/otherpages/inner/CEO 21.png';
 import vivian21 from './../../../../assets/images/otherpages/inner/Vivian 21.png';
 
@@ -40,9 +40,13 @@ const MissionCEO = () => {
             
             <p>Paul Eigbefoh is the visionary CEO of Smash Technology, a trailblazing company at the forefront of innovation in e-commerce, transport, 
             travels, real estate, food delivery, and investment solutions. With a passion for technology and a keen eye for transformative opportunities, 
-            Paul has spearheaded the development of user-centric platforms that redefine convenience and connectivity. Under his leadership, 
+            Paul has spearheaded the development of user-centric platforms that redefine convenience and connectivity. </p>
+            
+            <p>Under his leadership, 
             Smash Technology has grown into a dynamic force in the tech industry, driven by a commitment to sustainability, innovation, and empowering 
             individuals and businesses worldwide.</p>
+
+            <p><Link to="/about" className="smashtech-button swipe-button">Read more <UilArrowRight /></Link></p>
         </div>
     </div>
 

@@ -92,9 +92,9 @@ const Footer = (props) => {
           </div>
           <div className="col-md-6 footer-menu">
             <div className="f-menu">
-              <a href="http://legalcardinal.com.ng/privacypolicy">Privacy Policy</a>
-              <a href="http://legalcardinal.com.ng/termsandconditions">Terms of Use</a>
-              <a href="http://legalcardinal.com.ng/about#team">Blog</a>
+              <a href="/privacypolicy">Privacy Policy</a>
+              <a href="/termsandconditions">Terms of Use</a>
+              <a href="/about#team">Blog</a>
             </div>
           </div>
         </div>

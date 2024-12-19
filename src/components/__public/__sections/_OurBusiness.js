@@ -15,7 +15,7 @@ const OurBusiness = () => {
             apps for both local and international users.
         </p>
         
-      <div className="zy-c3 zy-c1-sm zy-c1-xs autoShow">
+      <div className="c3 c1-sm c1-xs">
         <Link to="/about" title="Ridesmash">
           <div className="business-container">
               <img src={biz1} />

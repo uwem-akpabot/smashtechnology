@@ -1,4 +1,4 @@
-import { UilTrophy, UilSitemap, UilGlobe, UilDesktop, UilLaptop, UilLock, UilArrowRight } 
+import { UilTrophy, UilSitemap, UilGlobe, UilDesktop, UilLaptop, UilLock, UilArrowRight, UilCheck } 
   from '@iconscout/react-unicons';
 import { Link } from 'react-router-dom';
 import { Autoplay } from 'swiper/modules';
@@ -9,7 +9,7 @@ import missionvision from './../../../assets/images/logo/missionvision.png';
 const MissionVision = () => {
   return (
     <>
-    <div className="sections" id="missionvision">
+    <div className="sections mission-desktop" id="missionvision">
       <h2>Mission Statement</h2>
 
       <Swiper 
@@ -42,7 +42,7 @@ const MissionVision = () => {
         modules={[Autoplay]}
         >
 
-        <div>
+        <div id="mission-desktop">
           <SwiperSlide>
             <Link to="">              
               <div className="swipe">
@@ -110,9 +110,33 @@ const MissionVision = () => {
       </Swiper>
       </div>
 
+
+      {/* mission - mobile */}
+      <h2 className="missionvision" id="mission-mobile">Mission Statement</h2>
+
+      <div id="mission-mobile">
+        <div>
+          <UilCheck className="icon" /> 
+          <p>To be our clients’ most preferred service provider</p>
+        </div>
+
+        <div>
+          <UilCheck className="icon" /> 
+          <p>To be our clients’ most preferred service provider</p>
+        </div>
+        <div>
+          <UilCheck className="icon" /> 
+          <p>To be our clients’ most preferred service provider</p>
+        </div>
+        <div>
+          <UilCheck className="icon" /> 
+          <p>To be our clients’ most preferred service provider</p>
+        </div>
+      </div>
+
       {/* Vision */}
 
-      <div className="sections" id="missionvision">
+      <div className="sections mission-desktop" id="missionvision">
       <h2>Vision Statement</h2>
 
       <Swiper 
@@ -194,6 +218,28 @@ const MissionVision = () => {
         </div>
       </Swiper>
 
+      </div>
+
+      {/* vision - mobile */}
+      <h2 className="missionvision" id="mission-mobile">Vision Statement</h2>
+      <div id="vision-mobile">
+        <div>
+          <UilCheck className="icon" /> 
+          <p>To be our clients’ most preferred service provider</p>
+        </div>
+
+        <div>
+          <UilCheck className="icon" /> 
+          <p>To be our clients’ most preferred service provider</p>
+        </div>
+        <div>
+          <UilCheck className="icon" /> 
+          <p>To be our clients’ most preferred service provider</p>
+        </div>
+        <div>
+          <UilCheck className="icon" /> 
+          <p>To be our clients’ most preferred service provider</p>
+        </div>
       </div>
     </>
   )

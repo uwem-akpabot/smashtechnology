@@ -21,6 +21,7 @@
   --content-edge: 0 1.8rem;
   --content-normal: 0 4.9rem;
   --content-inner: 0 10rem;
+  --zyzics-border-radius: 1.95rem;
 
   /* Colors */
   --smashtech-font-family: 'Montserrat', sans-serif !important;
@@ -29,11 +30,12 @@
   --smashtech-bg-grey: #F8F8FB;
   --smashtech-deep-grey: #393838;
   --p-color: #393838;
-  --smash-border-radius: 3.125rem;
 
   /* Sizes */
   --h1-font-size: 6rem; 
-  --text-font-size: 1.1rem;
+  --text-font-size: 1.1rem;;
+
+  --smash-border-radius: 50px;
 }
 
 /* === RESETS ==== */
@@ -62,7 +64,7 @@ img{
 } 
 
 /* GRIDS */
-.c1, .c2, .c3, .c4, .c5, .c6, .c1_2, .c2_1, .c3_1, .c3_2, .c5_2{
+.c1, .c2, .c3, .c4, .c5, .c6{
   display: grid;
 }
 .c1{ grid-template-columns: repeat(1, 1fr); }
@@ -71,16 +73,33 @@ img{
 .c4{ grid-template-columns: repeat(4, 1fr); }
 .c5{ grid-template-columns: repeat(5, 1fr); }
 .c6{ grid-template-columns: repeat(6, 1fr); }
+
+/* Section title */
+
+.zy-c1, .zy-c2, .zy-c3, .zy-c4, .zy-c5, .zy-c6, .zy-c1_2, .zy-c2_1, .zy-c3_1, .zy-c3_2, 
+.zy-c5_2{
+  display: grid;
+}
+.zy-c1{ grid-template-columns: repeat(1, 1fr); }
+.zy-c2{ grid-template-columns: repeat(2, 1fr); }
+.zy-c3{ grid-template-columns: repeat(3, 1fr); }
+.zy-c4{ grid-template-columns: repeat(4, 1fr); }
+.zy-c5{ grid-template-columns: repeat(5, 1fr); }
+.zy-c6{ grid-template-columns: repeat(6, 1fr); }
 /* diff dimensions */
-.c1_2{ grid-template-columns: 1fr 2fr; column-gap: .5rem; }
-.c2_1{ grid-template-columns: 2fr 1fr; column-gap: .5rem; }
-.c3_1{ grid-template-columns: 3fr 1fr; column-gap: .5rem; }
-.c3_2{ grid-template-columns: 3fr 2fr; column-gap: .5rem; }
-.c5_2{ grid-template-columns: 67% 33%; }
+.zy-c1_2{ grid-template-columns: 1fr 2fr; column-gap: .5rem; }
+.zy-c2_1{ grid-template-columns: 2fr 1fr; column-gap: .5rem; }
+.zy-c3_1{ grid-template-columns: 3fr 1fr; column-gap: .5rem; }
+.zy-c3_2{ grid-template-columns: 3fr 2fr; column-gap: .5rem; }
+.zy-c5_2{ grid-template-columns: 67% 33%; }
+
+
 
 .sections{
   padding: var(--content-normal);
   padding-block: 6rem;
+  /* align-items: center;
+  justify-content: center; */
 }
 h2, h3{
   font-weight: 600;
@@ -118,162 +137,6 @@ p{
 /* =================== */
 /* HOMEPAGE */
 /* =================== */
-
-/*** NEW *** WHO WE ARE */
-#whoweare{
-  width: 100% !important;
-  background-color: #F8F8FB;
-  margin-top: 12rem;
-}
-.tester{
-  gap: 5.7rem;
-  align-items: center;
-}
-#whoweare h2 span{
-  color: var(--smashtech-color2) !important;
-}
-#whoweare p span{
-  font-weight: bold;
-  font-size: calc(var(--text-font-size) * 1.25);
-}
-#whoweare div:nth-child(1){
-  gap: 2rem;
-  /* background-color: red; */
-}
-.left-left img, .left-right img{
-  height: 31.96rem;
-  border-radius: var(--smash-border-radius);
-}
-.left-left .small, .left-right .small{
-  width: 17.7rem;
-  border-radius: var(--smash-border-radius);
-  height: 4.25rem;
-}
-.left-left .small{
-  margin-top: 2.35rem;
-  background-color: #F8A580;
-}
-.left-right .small{
-  margin-bottom: 2.35rem;
-  background-color: #807FB2;
-}
-#whoweare h2.mobile{
-  display: none;
-}
-
-/* OUR BUSINESS */
-#ourbusiness div div{
-  border: 0.5px solid #bbb;
-  border-radius: 20px;
-  margin: 23px;
-  padding-bottom: 24px;
-}
-#ourbusiness div div:hover > h3, #ourteam div div:hover > h3{
-  color: var(--smashtech-color);
-}
-#ourbusiness h2, #ourbusiness p:nth-child(2){
-  width: 640px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  border: none !important;
-}
-#ourbusiness p:nth-child(2){
-  margin-block: 24px 96px;
-}
-#ourbusiness img{
-  height: 295px;
-  width: 100%;
-}
-.business-container {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-}
-.business-container img {
-  width: 100%;
-  height: 295px;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
-.business-container:hover img {
-  transform: scale(1.05);
-}
-#ourbusiness div div h3, #ourbusiness div div p{
-  padding-inline: 1rem;
-  padding-top: .8rem;
-}
-#ourbusiness div div p{
-  margin-block: 0 .75rem !important;
-  padding-top: .2rem;
-}
-#ourbusiness div div a{
-  margin-top: 1rem !important;
-  font-size: var(--text-font-size);
-  border: none !important;
-  padding-inline: 1rem;
-  color: var(--smashtech-color);
-}
-
-
-/* TEAM */
-#ourbusiness img.team{
-  height: 27.6rem;
-  border: none;
-}
-
-/* SMASH PEOPLE */
-.people{
-  margin-block: 12rem
-}
-.people img{
-  margin-bottom: 2rem;
-  width: 50%;
-}
-.people div{
-  display: flex;
-  align-items: center;
-  padding-block: .85rem;
-  justify-content: space-between;
-}
-.people div p{
-  font-size: 2rem;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-.bot{
-  background-color: #020066;
-  height: 1.18rem !important;
-  border-radius: var(--smash-border-radius);
-  padding-inline: 4.15rem !important;
-}
-
-/* VALUES */
-.val{
-  gap: 6rem;
-  align-items: center;
-  margin-bottom: 12rem;
-}
-.val p{
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-}
-.reverse.last{
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 /* BANNER */
 .video-banner {
@@ -327,7 +190,7 @@ p{
 }
 
 /* WHO WE ARE*/
-/* #whoweare{
+#whoweare{
   background-color: var(--smashtech-bg-grey);
   margin-top: 6rem;
 }
@@ -343,7 +206,13 @@ p{
 #whoweare h2.mobile{
   display: none;
 }
-
+#whoweare h2 span{
+  color: var(--smashtech-color2) !important;
+}
+#whoweare p span{
+  font-weight: bold;
+  font-size: calc(var(--text-font-size) * 1.25);
+}
 .splash > div:nth-child(1) .line-container{
   margin-left: auto;
   margin-right: 2.5rem
@@ -363,9 +232,64 @@ p{
 }
 .line-container:nth-child(1){
   background-color: #807FB2
-} */
+}
 
-
+/* OUR BUSINESS */
+#ourbusiness div div{
+  border: 0.5px solid #bbb;
+  border-radius: 20px;
+  margin: 23px;
+  padding-bottom: 24px;
+}
+#ourbusiness div div:hover > h3, #ourteam div div:hover > h3{
+  color: var(--smashtech-color);
+  /* box-shadow: 0 2px 4px #bbb; */
+  /* border: none; */
+}
+#ourbusiness h2, #ourbusiness p:nth-child(2){
+  width: 640px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border: none !important;
+}
+#ourbusiness p:nth-child(2){
+  margin-block: 24px 96px;
+}
+#ourbusiness img{
+  height: 295px;
+  width: 100%;
+}
+.business-container {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.business-container img {
+  width: 100%;
+  height: 295px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.business-container:hover img {
+  transform: scale(1.05);
+}
+#ourbusiness div div h3, #ourbusiness div div p{
+  padding-inline: 1rem;
+  padding-top: .8rem;
+}
+#ourbusiness div div p{
+  margin-block: 0 .75rem !important;
+  padding-top: .2rem;
+}
+#ourbusiness div div a{
+  margin-top: 1rem !important;
+  font-size: var(--text-font-size);
+  border: none !important;
+  padding-inline: 1rem;
+  color: var(--smashtech-color);
+}
 #ourteam div div a{
   /* margin-top: 2px !important; */
   font-size: var(--text-font-size);
@@ -421,6 +345,30 @@ p{
   padding-block: 30px;
 }
 
+/* OUR CORE VALUES */
+#ourcorevalues div{
+  gap: 96px;
+  align-items: center;
+}
+#ourcorevalues img{
+  width: 100%;
+  height: 441px;
+  border-radius: 20px;
+}
+#ourcorevalues h3{
+  font-size: 2rem;
+  padding: 0;
+  font-weight: 600;
+  line-height: 39px;
+  margin-bottom: 24px !important;
+}
+#ourcorevalues p{
+  font-size: 24px;
+  line-height: 40px;
+  margin: 0;
+  text-align: left !important;
+}
+
 /* MISSIONVISION */
 #missionvision h2{
   margin-bottom: 21px;
@@ -444,9 +392,6 @@ p{
 }
 #missionvision img{
   width: 184px;
-}
-#mission-mobile, #vision-mobile{
-  display: none;
 }
 
 /* OUR CORE PURPOSE */
@@ -659,21 +604,6 @@ p{
 .footer .copyright p a:hover {
   color: #ffffff;
 }
-.footer-menu .row {
-  display: flex; 
-  justify-content: space-between; /* Push items to the ends */
-  align-items: center; /* Vertically center items */
-}
-
-.footer-menu .col-md-6 {
-  display: flex; /* Make both columns flex containers */
-  align-items: center;
-}
-
-.footer-menu .f-menu {
-  margin-left: auto; /* Push "Terms of Use/Blog" div to the right */
-}
-
 
 @media (max-width: 768px) {
   .footer .copyright p,
@@ -681,22 +611,6 @@ p{
       margin: 5px 0;
       text-align: center;
   }
-  /* .footer-menu .row {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    align-items: center; 
-  }
-
-  .footer-menu .col-md-6 {
-    flex: 1; 
-  }
-
-  .footer-menu .f-menu {
-    margin-left: 0; 
-    text-align: right; 
-  } */
-  
 }
 
 
@@ -895,6 +809,8 @@ p{
     margin: 0 auto 10px;
   }
 }
+
+
 
 /* =================== */
 /* ABOUT PAGE */

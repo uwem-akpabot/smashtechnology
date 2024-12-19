@@ -1,8 +1,8 @@
 /* == 1. SMALLEST SCREENS, 2. SMALL TABLET SCREENS, AND SMALL SCREENS LIKE IPAD PRO */
-@media screen and (max-width: 1024px){
-    :root{
+/* @media screen and (max-width: 1024px){ */
 
-    }    
+/* 2. PHONE */
+@media screen and (max-width: 1024px){
     *{
         margin: 0;
         padding:0;
@@ -17,62 +17,154 @@
         padding: 0 !important;
         margin: 0 !important;
     }
-
     
     /* ZYZICS Reusable Grid Columns */
-    .zy-c1-xs, .zy-c2-xs, .zy-c3-xs, .zy-c4-xs{
+    .c1-xs, .c2-xs, .c3-xs, .c4-xs{
         display: grid;
     }    
-    .zy-c1-xs{ grid-template-columns: repeat(1, 1fr); }
-    .zy-c2-xs{ grid-template-columns: repeat(2, 1fr); }
-    .zy-c3-xs{ grid-template-columns: repeat(3, 1fr); }
-    .zy-c4-xs{ grid-template-columns: repeat(4, 1fr); }
+    .c1-xs{ grid-template-columns: repeat(1, 1fr); }
+    .c2-xs{ grid-template-columns: repeat(2, 1fr); }
+    .c3-xs{ grid-template-columns: repeat(3, 1fr); }
+    .c4-xs{ grid-template-columns: repeat(4, 1fr); }
     
     /* Sections */
-    #whoweare, #ourbusiness, #ourcorevalues, #ourteam, #missionvision, .footer{
+    #whoweare, #ourbusiness, #ourcorevalues, #ourteam, #missionvision, #about_people, .footer{
         max-width: 100%;
         padding: 24px !important;
         margin: 0;
     }
 
     /* Section Titles */
-    #ourbusiness h2, #ourteam h2, #ourcorevalues h2, #ourcorepurpose h2, #missionvision h2{
+    #whoweare h2, #ourbusiness h2, #ourteam h2, #ourcorevalues h2, #ourcorepurpose h2, #missionvision h2, h2.missionvision, 
+        #about_people h2{
         max-width: 100%;
         font-size: 24px;
         margin-block: 34px 16px;
     }
 
-
-    #ourteam img, #ourcorevalues img{
-        /* max-width: 100%; */
-        width: auto;
-        height: auto; 
-    }    
-    #ourcorevalues div, #missionvision div{
-        gap: 0 !important;
+    /*** NEW *** WHO WE ARE */
+    #whoweare{
+        max-width: 100%;
+        margin-top: 2rem !important;
+        padding-top: 4rem !important;
     }
-    #ourcorevalues h3{
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 24.38px;
+    #whoweare .left-left, #whoweare .left-right, #whoweare .small{
+        width: 100%;
+        gap: 0;     
+    }
+    #whoweare .left-left img, #whoweare .left-right img{
+        height: 15rem;
+        border-radius: 2rem;
+    }
+    #whoweare .small{
+        width: 8.4rem;
+        height: 2rem;
+    }
+    #whoweare .left-left .small{
+        margin-top: 1.2rem;
+    }
+    #whoweare .left-right .small{
+        margin-bottom: 1.2rem;
+    } 
+
+    #whoweare h2.desktop{
+        display: none !important;
+    }
+    #whoweare h2.mobile{
+        display: block;
         text-align: center;
-        padding-top: 24px;
         margin: 0 !important;
-        /* padding-bottom: 0 !important; */
-        /* background-color: red; */
+        padding: 0 !important;
+        width: 100%;
+        font-size: 1.5rem;
+        padding-bottom: 2rem !important;
     }
-    #ourcorevalues p{
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 32px;
-        text-align: center !important;
-        margin: 1rem 0 0 0;
-    }
-    #ourcorevalues img{
-        margin-block: 5px
+    #whoweare .tester{
+        gap: 0;
     }
 
-    #missionvision .swipe{
+    /* OUR BUSINESS */
+    #ourbusiness div div{
+        border: 0.5px solid #bbb;
+        border-radius: 13.35px;
+        margin: 23px;
+        padding-bottom: 24px;
+    }
+    #ourteam div div img{
+        border-radius: 13.35px 13.35px 0 0;
+    }
+    #ourteam div div div{
+        border-radius: 0 0 13.35px 13.35px;
+    }
+    #ourbusiness h2{
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    #ourbusiness h2, #ourbusiness p:nth-child(2){
+        width: 640px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        border: none !important;
+    }
+    #ourbusiness p:nth-child(2){
+        margin-block: 24px 64px;
+        width: 100%;
+        text-align: center !important;
+    }
+    #ourbusiness div div a{
+        margin-top: 1rem !important;
+        font-size: var(--text-font-size);
+        border: none !important;
+        padding-inline: 1rem;
+        color: var(--smashtech-color);
+    }
+    #ourbusiness img{
+        height: 196px;
+    }
+      
+    #ourbusiness div, #ourteam div{
+        gap: 32px !important;
+    }
+    #ourbusiness div div, #ourteam div div{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    /* TEAM */
+    h3.team{
+        line-height: 3.5rem;
+    }
+
+    /* MISSION/VISION */
+    h2.missionvision{
+        text-align: center;
+        margin-block: 0;
+    }
+    .mission-desktop, .vision-desktop{
+        display: none !important;
+    }
+    #mission-mobile, #vision-mobile{
+        display: block;
+        padding: 1rem;
+    }
+    #mission-mobile > div, #vision-mobile > div{
+        display: flex;
+        align-items: center;
+        /* gap: 2rem */
+    }
+    
+    #mission-mobile p, #vision-mobile p{
+        margin: 0;
+        margin-bottom: 1.5rem !important;
+    }
+    #mission-mobile .icon, #vision-mobile .icon{
+        color: #020066;
+        margin-bottom: 2rem
+    }
+
+    /* #missionvision .swipe{
         border: 2px solid #bbb;
     }
     #missionvision .swipe p{
@@ -80,10 +172,131 @@
     }
     #missionvision .swipe img{
         margin-top: 0 !important;
+    } */
+
+    /* VALUES */
+    .val{
+        gap: 0 !important;
+        margin-bottom: 4rem;
     }
+    .val h3, .val img{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .val h3{
+        line-height: 2rem !important;
+        margin-top: 1.4rem !important;
+    }
+    .val p{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .reverse img{
+        order: -1;
+    }
+
+    /* PEOPLE */
     
+    #about_people h2{
+        line-height: 120%;
+    }
+
+    #about_people div p{
+        max-width: 100% !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .people{
+        margin: 0 !important;
+        padding: 0 !important;
+        padding-bottom: 3rem !important;
+    }
+    .people div{
+        flex-direction: column;
+    }
+    .people .smashtech-button{
+        margin-block: 1rem 2rem !important;
+        width: 100%;
+        font-size: 1rem;
+        padding-block: .8rem;
+    }
+    .people-h2{
+        font-size: 1.8rem !important;
+        line-height: 110%;
+    }
+    .people img{
+        height: auto !important;
+        width: 100% !important;
+        border-radius: 1rem !important;
+    }
+}
+
+    /* ================================================= */
+    
+/* 2. PHONE LANDSCAPE */
+@media screen and (min-width: 577px) and (max-width: 767px){
+    #whoweare{
+        background-color: green !important;
+    }
+}
+
+/* 3. TABLETS and MEDIUM SCREENS like iPad Pro */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    #whoweare{
+        background-color: orange !important;
+    }
+}
+
+/* 4. SMALL LAPTOP SCREENS */
+@media screen and (min-width: 1025px) and (max-width: 1206px){
+    #whoweare{
+        background-color: blue !important;
+    }
+}
+
+/* 5. NORMAL LAPTOP SCREENS (E.G MY OWN 1366w) UP TO LARGE SCREENS*/
+/* FINAL == my laptop at home */
+@media screen and (min-width: 1207px) and (max-width: 1500px){
+    #whoweare{
+        background-color: pink !important;
+    }
+}
+
+/* FINAL == CEO's, Chris', Val's Laptops */
+@media screen and (min-width: 1501px) and (max-width: 1900px){
+    #whoweare{
+        background-color: red !important;
+    }
+}
+/* Val and CEO == 1920w */
+
+/* 6. My office system w1920 */
+/* FINAL == My office laptop */
+@media screen and (min-width: 1901px){
+    #whoweare{
+        /* background-color: #222 !important; */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+   
     /* BANNER */
-    .video-banner{
+    /* .video-banner{
         width: 100%;
         padding-inline: 24px !important;
     }    
@@ -91,7 +304,7 @@
         margin-top: auto;
         position: relative;
         text-align: center;
-        z-index: 1; /* Places content above the overlay and video */
+        z-index: 1; 
     }
     .banner-content h1, .banner-content span{
         font-size: 32px;
@@ -106,10 +319,9 @@
     }
     .banner-content span{
         color: var(--smashtech-color);
-    }
+    } */
 
-    /* WHO WE ARE*/
-    #whoweare{
+    /* #whoweare{
         width: 100%;
         margin: 0;
         padding: 0; 
@@ -162,57 +374,9 @@
     }
     .line-container:nth-child(1){
         background-color: #807FB2
-    }
+    } */
 
-    /* OUR BUSINESS */
-    #ourbusiness div div{
-        border: 0.5px solid #bbb;
-        border-radius: 13.35px;
-        margin: 23px;
-        padding-bottom: 24px;
-    }
-    #ourteam div div img{
-        border-radius: 13.35px 13.35px 0 0;
-    }
-    #ourteam div div div{
-        border-radius: 0 0 13.35px 13.35px;
-    }
-    #ourbusiness h2{
-        margin-bottom: 0 !important;
-        padding-bottom: 0 !important;
-    }
-    #ourbusiness h2, #ourbusiness p:nth-child(2){
-        width: 640px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        border: none !important;
-    }
-    #ourbusiness p:nth-child(2){
-        margin-block: 24px 64px;
-        width: 100%;
-        text-align: center !important;
-    }
-    #ourbusiness div div a{
-        margin-top: 1rem !important;
-        font-size: var(--text-font-size);
-        border: none !important;
-        padding-inline: 1rem;
-        color: var(--smashtech-color);
-    }
-    #ourbusiness img{
-        height: 196px;
-    }
-      
-    /* OUR TEAM */
-    #ourbusiness div, #ourteam div{
-        gap: 32px !important;
-    }
-    #ourbusiness div div, #ourteam div div{
-        width: 100% !important;
-        margin: 0 !important;
-    }
+    /*
     
     #ourteam h3{
         font-size: 21px;
@@ -226,7 +390,11 @@
         margin: 0;
         text-align: left !important;
     }
-    #ourteam div div div{ /* The bottom div for each flex item */
+    */
+    
+    /* The bottom div for each flex item */
+    /*
+    #ourteam div div div{ 
         padding-inline: 12.18px;
         width: 100%;
         margin-top: 0;
@@ -239,11 +407,8 @@
     #ourbusiness div div a{
         font-size: calc(var(--text-font-size) * 1.1);
     }
-    #ourteam div div{ 
-        /* background-color: yellow; */
-    }
 
-    /* FOOTER */
+    
     .footer{
         width: 100% !important;
         margin: 0;
@@ -253,276 +418,6 @@
         width: 100% !important;
         margin: 0;
         padding: 0; 
-    }
-
-    /* === COURSES === */
-    .courses{
-        padding: 1.2rem !important; 
-        width: 100% !important;
-    }
-    .courses h1{
-        font-size: var(--courses-h1);
-        font-weight: 500;
-    }
-    .course{
-        margin-inline: 0 !important;
-    }
-    .course_top, .course_content{
-        padding-inline: .85rem;
-    }
-    .course_top{
-        color:#0d0d0d; 
-        height: 6.6rem;
-        align-content: end;
-        padding-block: .5rem;
-        border-radius: 3px 3px 0 0;
-    }
-    .course_content{
-        border: 1px solid #ddd;
-        border-top: 0;
-        padding-block: 1.05rem;
-        border-radius: 0 0 3px 3px;
-    }
-    .course_content h1{
-        margin-block: 1.4rem 0;
-    }
-    .course_content p a{
-        font-size: calc(var(--courses-h1) * .68) !important;
-    }
-    .course_content p{
-        color: #343434 !important;
-        font-size: calc(var(--courses-h1) * .68) !important;
-    }
-    .course button{
-        padding: .7rem;
-        width: 100%;
-        text-align: left;
-        color: #fff;
-        border-radius: 3px;
-        font-weight: 300;
-    }
-    .course .btn{
-        font-size: .8rem;
-        font-weight: normal;
-        border: 1px solid #666;
-        color: #666;
-        text-align: left !important;
-        padding-block: .25rem;
-        padding-inline: .5rem;
-        border-radius: 3px;
-        margin-block: 0 1.3rem;
-    }
-
-    /* zyzics_company_banner */
-    .zyzics_company_banner{
-        padding: var(--content-edge);
-    }
-    .zyzics_company_banner h1{
-        width: 80%;
-        font-family: var(--title-font) !important;
-        text-transform: uppercase;
-        font-size: calc(var(--h2-font-size) * 1.08);
-        line-height: 92%;
-    }
-    .zyzics_company_banner .contacts{
-        display: flex;
-        align-items: center;
-        gap: 1.6rem;
-        padding-block: 1rem;
-        /* background-color: red; */
-    
-    }
-    .contacts h6 a{
-        font-size: var(--h2-font-size) !important;
-    }
-    
-    #banner{
-        display: block !important;
-        width: 100% !important;
-        padding: 0 !important;
-    }
-    /* zyzics__banner */
-    .zyzics__banner{
-        background-color: var(--zyzics-color);
-        margin: var(--content-edge-mobile) !important;
-        margin-top: 0 !important;
-        padding: var(--content-edge-mobile);
-        padding-block: 2rem .5rem;
-        border-radius: 1.2rem;
-    }
-    .zyzics__banner h1{
-        font-size: 4.1rem;
-        color: black;
-        line-height: 88%;
-    }
-    .zyzics__banner p{
-        font-size: var(--body-font-size);
-        width: 100%;
-        color: #222e;
-        margin-block: 1.5rem 1.9rem;
-        line-height: 145%;
-    }
-
-    /* Zyzics Buttons */
-    .zyzics-btn{
-        background: var(--zyzics-blue);
-        border-radius: 1.95rem;
-        padding: .8rem 1.1rem;
-        color: white !important;
-        font-size: 1rem;
-        line-height: 19px;
-        text-align: center;
-        letter-spacing: normal;
-    }
-    .zyzics__banner h2{
-        font-size: calc(var(--h1-font-size) * .7);
-        color: black;
-        width: 90%;
-        margin-bottom: 2.2rem;
-    }
-    .zyzics__banner h5{
-        color: var(--text-color);
-        width: 90%;
-        margin-top: 1rem
-    }
-    .zyzics_ittraining-subbanner{
-        font-size: calc(var(--body-font-size) * 1.15);
-        width: 90%;
-        color: #111e;
-        margin-block: .7rem;
-    }
-    .zyzics_ittraining-subbanner p{
-        margin-block: .2rem;
-    }
-    
-    /* Social Icons */
-    .zyzics__social{
-        display: flex;
-        column-gap: .75rem;
-        align-items: center;
-        padding: var(--content-normal) !important;
-        padding-block: 2rem !important;
-    }
-    .zyzics__social2{
-        display: flex;
-        column-gap: .2rem;
-        align-items: center;
-    }
-    .zyzics__social-link{
-        display: inline-flex;
-        background-color: var(--container-color);
-        padding: .65rem;
-        margin-inline: .1rem;
-        border-radius: 10rem;
-        color: #fff;
-        font-size: 1rem;
-        transition: .4s;
-    }
-    
-    /* Sub-banner Black */
-    .zyzics_ittraining-black{
-        height: 25vh;
-        margin: var(--content-edge) !important;
-        margin-top: 1rem !important;
-    }
-}
+    } */
 
 /* ================================== */
-
-/* 2. TABLETS */
-@media screen and (min-width: 577px) and (max-width: 767px){
-    :root{
-        --courses-h1: 1.9rem;
-        --content-edge-mobile: .8rem;
-    }   
-
-    /* ZYZICS Reusable Grid Columns */
-    .zy-c1-sm, .zy-c2-sm, .zy-c3-sm, .zy-c4-sm{
-        display: grid;
-    }    
-    .zy-c1-sm{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .zy-c2-sm{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .zy-c3-sm{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .zy-c4-sm{
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .zyzics__banner h1{
-        width: 75%;
-    }
-}
-
-
-/* ============================ */
-
-/* 3. MEDIUM SCREENS like iPad Pro */
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    :root{
-        --courses-h1: 1.9rem;
-        --content-edge-mobile: .8rem;
-    }  
-    
-    /* ZYZICS Reusable Grid Columns */
-    .zy-c1-md, .zy-c2-md, .zy-c3-md, .zy-c4-md, .zy-c6-md{
-        display: grid;
-    }
-    .zy-c1-md{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .zy-c2-md{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .zy-c3-md{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .zy-c4-md{
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .zy-c6-md{
-        grid-template-columns: repeat(6, 1fr);
-    }
-
-    body{
-        /* background-color: blue !important */
-    }
-    .zyzics__banner{
-        padding: var(--content-edge);
-        margin-inline: calc(var(--content-edge-mobile) * 3) !important;
-    }
-    .zyzics__banner h1{
-        width: 80%;
-        font-size: 9rem;
-    }
-    .zyzics__banner p{
-        font-size: 1.8rem !important;
-        margin-block: 2rem 3rem;
-    }
-    p, .zyzics-btn{
-        font-size: 1.8rem !important;
-    }
-    .zyzics-btn{
-        padding: 1.1rem 2rem;
-        border-radius: 5rem;
-    }
-
-}
-
-
-/* 4. SMALL LAPTOP SCREENS */
-@media screen and (min-width: 1025px) and (max-width: 1206px){
-    body{
-        /* background-color: orange; */
-    }
-}
-/* 5. NORMAL LAPTOP SCREENS (E.G MY OWN) UP TO LARGE SCREENS*/
-@media screen and (min-width: 1207px){
-    body{
-        /* background-color: pink; */
-    }
-}

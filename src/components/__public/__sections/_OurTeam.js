@@ -10,10 +10,96 @@ import biz2 from './../../../assets/images/ourbusiness/Food.png';
 const OurTeam = () => {
   return (
     <>
-    <div className="sections" id="ourteam">
+    <div className="sections" id="ourbusiness">
       <h2>Meet Our Team</h2>
         
-      <div className="zy-c2 zy-c1-sm zy-c1-xs">
+      <div className="c2 c1-sm c1-xs">
+        <Link to="/about" title="Ridesmash">
+          <div className="business-container">
+            <img src={ceo} class="team" />
+
+            <h3 class="team">Chief Executive Officer</h3>
+            <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
+            <Link to="/about">Learn more <UilArrowRight /></Link>
+          </div>
+        </Link>
+        <Link to="/about" title="Ridesmash">
+          <div className="business-container">
+            <img src={biz2} class="team" />
+
+            <h3 class="team">General Manager</h3>
+            <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
+            <Link to="/about">Learn more <UilArrowRight /></Link>
+          </div>
+        </Link>
+
+        <Link to="/about" title="Ridesmash">
+          <div className="business-container">
+            <img src={gracious} class="team" />
+
+            <h3 class="team">Head of Media & Communications</h3>
+            <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
+            <Link to="/about">Learn more <UilArrowRight /></Link>
+          </div>
+        </Link>
+
+        <Link to="/about" title="Ridesmash">
+          <div className="business-container">
+            <img src={biz2} class="team" />
+
+            <h3 class="team">Human Resource Manager</h3>
+            <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
+            <Link to="/about">Learn more <UilArrowRight /></Link>
+          </div>
+        </Link>
+
+        <Link to="/about" title="Ridesmash">
+          <div className="business-container">
+            <img src={biz2} class="team" />
+
+            <h3 class="team">Head of Operations</h3>
+            <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
+            <Link to="/about">Learn more <UilArrowRight /></Link>
+          </div>
+        </Link>
+
+        <Link to="/about" title="Ridesmash">
+          <div className="business-container">
+            <img src={biz2} class="team" />
+
+            <h3 class="team">Head of Sales</h3>
+            <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
+            <Link to="/about">Learn more <UilArrowRight /></Link>
+          </div>
+        </Link>
+
+        <Link to="/about" title="Ridesmash">
+          <div className="business-container">
+            <img src={biz2} class="team" />
+
+            <h3 class="team">Head of Investments</h3>
+            <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
+            <Link to="/about">Learn more <UilArrowRight /></Link>
+          </div>
+        </Link>
+
+        <Link to="/about" title="Ridesmash">
+          <div className="business-container">
+            <img src={charity} class="team" />
+
+            <h3 class="team">Team Lead SmashTravels</h3>
+            <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
+            <Link to="/about">Learn more <UilArrowRight /></Link>
+          </div>
+        </Link>
+
+      </div>
+    </div>
+
+
+
+        
+      {/* <div className="zy-c2 zy-c1-sm zy-c1-xs">
         <Link to="/about">
           <div className="business-container">
               <img src={ceo} />
@@ -103,8 +189,8 @@ const OurTeam = () => {
             </div>
           </div>
         </Link>
-      </div>
-    </div>
+      </div> */}
+      
     </>
   )
 }

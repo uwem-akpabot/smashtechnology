@@ -4,7 +4,11 @@ import Home from './pages/Home';
 import About from './pages/About';
 import People from './__public/__sections/About/People';
 import InvestorRelations from './__public/__sections/About/InvestorRelations';
+import Careers from './pages/Careers';
 import Footer from './__public/__layouts/Footer';
+import MediaIT from './pages/MediaIT';
+import InvestmentWithROI from './pages/InvestmentWithROI';
+import ApplicationForm from './pages/ApplicationForm';
 
 // Public
 // import Registration from './pages/member/Registration';
@@ -25,6 +29,10 @@ const Main = () => {
         <Route path="/about" element={<About company={company} />} />
         <Route path="/smash-people" element={<People company={company} />} />
         <Route path="/investor-relations" element={<InvestorRelations company={company} />} />
+        <Route path="/careers" element={<Careers company={company} />} />
+        <Route path="/media-it" element={<MediaIT company={company} />} />
+        <Route path="/investment-with-roi" element={<InvestmentWithROI company={company} />} />
+        <Route path="/investor-signup" element={<ApplicationForm company={company} />} />
 
         {/* DETAIL PAGES */}
         {/* <Route path="/course-category/:category_id" element={<CategoryDetail project={project} />} />

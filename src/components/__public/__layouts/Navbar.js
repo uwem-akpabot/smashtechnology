@@ -77,8 +77,9 @@ const Navbar = (props) => {
               {/* <div className="dropdown-angle"></div> */}
                 <div className="dropdown-content">
                   <ul className="">
-                    <li><Link to="/">Ridesmash</Link></li>
-                    <li><Link to="/">Smash Travels</Link></li>
+                    <li><a href="https://ridesmash.com/">Ridesmash</a></li>
+                    <li><a href="https://smashtravels.com/">Smash Travels</a></li>
+                    <li><a href="https://www.smashbookings.com/">Smash Bookings</a></li>
                     <li><Link to="/">Smashwise</Link></li>
                     <li><Link to="/">Smashbuy247</Link></li>
                     <li><Link to="/">Smash Apartments</Link></li>
@@ -105,8 +106,8 @@ const Navbar = (props) => {
                 <div className="dropdown-content">
                   <ul className="">
                     <li><Link to="/">Buy Shares</Link></li>
-                    <li><Link to="/">Investment with ROI</Link></li>
-                    <li><Link to="/">Investor Signup</Link></li>  
+                    <li><Link to="/investment-with-roi">Investment with ROI</Link></li>
+                    <li><Link to="/investor-signup">Investor Signup</Link></li>  
                   </ul>
               </div>
             </div>
@@ -114,7 +115,7 @@ const Navbar = (props) => {
         </li>
 
         <li className="menu-item" title="Browse our careers">
-          <Link to="/" className="menu-button">Careers</Link>
+          <Link to="/careers" className="menu-button">Careers</Link>
         </li>
 
         <li className="menu-item" title="Our media">
@@ -126,9 +127,9 @@ const Navbar = (props) => {
               {/* <div className="dropdown-angle"></div> */}
               <div className="dropdown-content">
                 <ul className="">
-                  <li><Link to="/">Buy Shares</Link></li>
-                  <li><Link to="/">Investment with ROI</Link></li>
-                  <li><Link to="/">Investor Signup</Link></li>
+                  <li><Link to="/">Smash CSR</Link></li>
+                  <li><Link to="/">Gallery</Link></li>
+                  <li><Link to="/">Blog</Link></li>
                 </ul>
               </div>
             </div>

@@ -236,36 +236,68 @@
 /* 2. PHONE LANDSCAPE */
 @media screen and (min-width: 577px) and (max-width: 767px){
     #whoweare{
-        background-color: green !important;
+        /* background-color: green !important; */
     }
 }
 
 /* 3. TABLETS and MEDIUM SCREENS like iPad Pro */
 @media screen and (min-width: 768px) and (max-width: 1024px){
     #whoweare{
-        background-color: orange !important;
+        /* background-color: orange !important; */
     }
 }
 
 /* 4. SMALL LAPTOP SCREENS */
 @media screen and (min-width: 1025px) and (max-width: 1206px){
     #whoweare{
-        background-color: blue !important;
+        /* background-color: blue !important; */
     }
 }
 
 /* 5. NORMAL LAPTOP SCREENS (E.G MY OWN 1366w) UP TO LARGE SCREENS*/
 /* FINAL == my laptop at home */
 @media screen and (min-width: 1207px) and (max-width: 1500px){
+    html{
+        font-size: 90%;  /* change for different device sizes */
+    }
+    .smashtech-button{
+        font-size: 95% !important;  
+    }
+    #ourcorevalues p{
+        font-size: 115%;  
+    }
+    h2{
+        font-size: 188%;  
+    }
+    h3{
+        font-size: 145%;  
+    }
+    .sections{
+        padding: var(--content-edge);
+        padding-block: 4rem;
+    }
     #whoweare{
-        background-color: pink !important;
+        /* background-color: pink !important; */
+    }
+    #whoweare .tester{        
+        gap: 2.5rem !important
     }
 }
 
 /* FINAL == CEO's, Chris', Val's Laptops */
 @media screen and (min-width: 1501px) and (max-width: 1900px){
+    html{
+        font-size: 90%;  /* change for different device sizes */
+    }
+    .sections{
+        padding: var(--content-edge);
+        padding-block: 4rem;
+    }
     #whoweare{
-        background-color: red !important;
+        /* background-color: red !important; */
+    }
+    #whoweare .tester{        
+        gap: 2.5rem !important
     }
 }
 /* Val and CEO == 1920w */

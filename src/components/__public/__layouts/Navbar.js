@@ -57,7 +57,7 @@ const Navbar = (props) => {
               <div className="dropdown-content">
                 <ul className="">
                     <li><Link to="/about">About Us</Link></li>
-                    <li><Link to="/about#corevalues">Our Core Values</Link></li>
+                    <li><Link to="#about_missionceo">Our Core Values</Link></li>
                     <li><Link to="/about#commitment1">Commitment to Sustainability</Link></li>
                     <li><Link to="/about#commitment2">Commitment To Quality</Link></li>
                     <li><Link to="/about#">Exceptional Customer Service</Link></li>

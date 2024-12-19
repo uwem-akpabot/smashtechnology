@@ -307,6 +307,14 @@
         gap: 0 !important;
         display: flex;
     }
+    .banner_otherpages h1 {
+        font-size: 6.6rem;
+    }
+    
+    .ceo-div .smashtech-button{
+        font-size: 1rem !important;
+        padding: .7rem 1.45rem !important;
+    }
     #whoweare{
         /* background-color: pink !important; */
     }

@@ -34,7 +34,7 @@ const MissionCEO = () => {
         <img src={ceo21} />
         
         <div>
-            <h3>Paul Eigbefoh</h3>
+            <h2>Paul Eigbefoh</h2>
             <h4>Chief Executive Officer Smash Technology</h4>
             <hr />
             

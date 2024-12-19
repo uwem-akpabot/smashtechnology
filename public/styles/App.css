@@ -805,7 +805,7 @@ p{
 .banner_otherpages h1 {
   position: relative;
   z-index: 2; /* Text is above the overlay */
-  font-size: 128px;
+  font-size: 7.6rem;
   line-height: 1.2;
   color: #fff;
 }
@@ -924,7 +924,7 @@ p{
 .ceo-div img{
   width: 100%;
 }
-.ceo-div p, .ceo-div h3, .ceo-div h4{
+.ceo-div p, .ceo-div h2, .ceo-div h3, .ceo-div h4{
   padding: var(--content-normal);
 }
 .ceo-div hr{

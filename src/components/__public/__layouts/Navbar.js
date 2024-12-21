@@ -1,9 +1,21 @@
 import { useState, useEffect } from 'react';
 import { UilBars } from '@iconscout/react-unicons';
-import {Link} from 'react-router-dom';
+import {Link, useLocation } from 'react-router-dom';
 import logo from '../../../assets/images/logo/smash-logo.png';
 
 const Navbar = (props) => {
+  const location = useLocation();
+
+  // Detect if it's a same-page anchor and scroll smoothly
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.replace('#', ''));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
   // state for navbar click event
   const [isOpen, setIsOpen] = useState(false);
 
@@ -56,13 +68,13 @@ const Navbar = (props) => {
               {/* <div className="dropdown-angle"></div> */}
               <div className="dropdown-content">
                 <ul className="">
-                    <li><Link to="/about">About Us</Link></li>
-                    <li><Link to="#about_missionceo">Our Core Values</Link></li>
-                    <li><Link to="/about#commitment1">Commitment to Sustainability</Link></li>
-                    <li><Link to="/about#commitment2">Commitment To Quality</Link></li>
-                    <li><Link to="/about#">Exceptional Customer Service</Link></li>
-                    <li><Link to="/investor-relations">Investor Relations</Link></li>
-                    <li><Link to="/smash-people">People</Link></li>
+                  <li><Link to="/about">About Us</Link></li>
+                  <li><Link to="/about#core_values">Our Core Values</Link></li>
+                  <li><Link to="/about#commitment_to_sustainability">Commitment to Sustainability</Link></li>
+                  <li><Link to="/about#commitment_to_quality">Commitment To Quality</Link></li>
+                  <li><Link to="/about#exceptional_cs">Exceptional Customer Service</Link></li>
+                  <li><Link to="/investor-relations">Investor Relations</Link></li>
+                  <li><Link to="/smash-people">People</Link></li>
                 </ul>
               </div>
             </div>

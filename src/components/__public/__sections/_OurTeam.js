@@ -4,7 +4,15 @@ import { Link } from 'react-router-dom';
 import ceo from './../../../assets/images/ourteam/CEO.png';
 import gracious from './../../../assets/images/ourteam//Gracious.png';
 import charity from './../../../assets/images/ourteam/Charity.png';
+
+import miriam from './../../../assets/images/ourteam/Mariam1.png';
+import lola from './../../../assets/images/ourteam/Lola1.png';
+import precious from './../../../assets/images/ourteam/Precious.png';
+import val from './../../../assets/images/ourteam/Val.png';
+import yakubu from './../../../assets/images/ourteam/Yakubu1.png';
+import favour from './../../../assets/images/ourteam/Favour1.png';
 import biz2 from './../../../assets/images/ourbusiness/Food.png';
+
 // import biz3 from './../../../assets/images/ourbusiness/SmashTravels.png';
 
 const OurTeam = () => {
@@ -65,7 +73,7 @@ const OurTeam = () => {
 
         <Link to="/about" title="Ridesmash">
           <div className="business-container">
-            <img src={biz2} class="team" />
+            <img src={miriam} class="team" />
 
             <h3 class="team">Head of Sales</h3>
             <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
@@ -75,7 +83,7 @@ const OurTeam = () => {
 
         <Link to="/about" title="Ridesmash">
           <div className="business-container">
-            <img src={biz2} class="team" />
+            <img src={yakubu} class="team" />
 
             <h3 class="team">Head of Investments</h3>
             <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
@@ -88,6 +96,46 @@ const OurTeam = () => {
             <img src={charity} class="team" />
 
             <h3 class="team">Team Lead SmashTravels</h3>
+            <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
+            <Link to="/about">Learn more <UilArrowRight /></Link>
+          </div>
+        </Link>
+
+        <Link to="/about" title="Ridesmash">
+          <div className="business-container">
+            <img src={favour} class="team" />
+
+            <h3 class="team">Team Lead Ridesmash</h3>
+            <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
+            <Link to="/about">Learn more <UilArrowRight /></Link>
+          </div>
+        </Link>
+
+        <Link to="/about" title="Ridesmash">
+          <div className="business-container">
+            <img src={precious} class="team" />
+
+            <h3 class="team">Team Lead Smashwise</h3>
+            <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
+            <Link to="/about">Learn more <UilArrowRight /></Link>
+          </div>
+        </Link>
+
+        <Link to="/about" title="Ridesmash">
+          <div className="business-container">
+            <img src={lola} class="team" />
+
+            <h3 class="team">Administrative Executive</h3>
+            <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
+            <Link to="/about">Learn more <UilArrowRight /></Link>
+          </div>
+        </Link>
+
+        <Link to="/about" title="Ridesmash">
+          <div className="business-container">
+            <img src={val} class="team" />
+
+            <h3 class="team">Product Designer</h3>
             <p>Get a safe and affordable ride anytime, anywhere with our user-friendly ride-hailing platform.</p>
             <Link to="/about">Learn more <UilArrowRight /></Link>
           </div>

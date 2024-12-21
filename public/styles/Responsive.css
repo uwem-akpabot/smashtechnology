@@ -28,7 +28,8 @@
     .c4-xs{ grid-template-columns: repeat(4, 1fr); }
     
     /* Sections */
-    #whoweare, #ourbusiness, #ourcorevalues, #ourteam, #missionvision, #about_people, .footer{
+    #whoweare, #ourbusiness, #ourcorevalues, #ourteam, #missionvision, #about_people, .num_text, #about_missionceo, .tab-container, .exceptional-customer, 
+    .footer{
         max-width: 100%;
         padding: 24px !important;
         margin: 0;
@@ -36,7 +37,7 @@
 
     /* Section Titles */
     #whoweare h2, #ourbusiness h2, #ourteam h2, #ourcorevalues h2, #ourcorepurpose h2, #missionvision h2, h2.missionvision, 
-        #about_people h2{
+        #about_people h2, #about_missionceo h2, .ceo-div h2, .exceptional-customer h2{
         max-width: 100%;
         font-size: 24px;
         margin-block: 34px 16px;
@@ -229,6 +230,162 @@
         width: 100% !important;
         border-radius: 1rem !important;
     }
+    
+    #ourcorepurpose{
+        gap: 0 !important;
+        padding: 1rem !important;
+    }
+    .box{
+        gap: 0 !important
+    }
+    .square img{
+        width: 100%; 
+        height: 360px;
+        border-radius: 100%;
+    }
+    #ourcorepurpose .num_text{
+        gap: 1rem;
+        padding-inline: 0 !important;
+        padding-bottom: 0 !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    #ourcorepurpose .num_text h1{
+        border: 2px solid #E5E5EF;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 0 !important;
+        border-radius: 100%;
+        width: 5.5rem;
+        height: 5.5rem;
+        margin: 0 auto !important;
+        align-content: center !important;
+        text-align: center;
+    }
+    #ourcorepurpose .num_text h3{
+        font-size: 1.5rem;
+    }
+    #ourcorepurpose .num_text p{
+        margin-block: 1rem 2rem;
+    }
+    #ourcorepurpose .vertical-line {
+        display: none;
+    }
+    .smashtech-button{
+        font-size: 95% !important;  
+    }
+    
+    .video-banner {
+        height: 17.8rem; 
+        background-color: var(--smashtech-deep-grey);
+        padding: var(--content-edge);
+        padding-block: 4rem;
+        overflow: hidden;
+        /* margin-top: 7rem !important; */
+    }
+    .banner-content h1, .banner-content span, .banner_otherpages h1{
+        font-size: 2rem;
+        line-height: 39px;
+    }
+    .banner-content h1 small{
+        font-size: 24px;
+    }
+    /* Banner other pages */
+    .banner_otherpages{
+        height: 17.8rem; 
+        background-color: var(--smashtech-deep-grey);
+        padding: var(--content-edge) !important;
+        padding-bottom: 4rem !important;
+        margin-bottom: 0;
+        overflow: hidden;
+        align-items: end;
+        /* margin-top: 7rem !important; */
+    }
+    .banner_otherpages h1{
+        text-align: left;
+        width: 100%
+        /* align-content: end !important; */
+    }
+
+    #about_missionceo p{
+        width: 100% !important;
+    }
+    .ceo-div{
+        padding-inline: 1rem;
+    }
+    .ceo-div p, .ceo-div h2, .ceo-div h3, .ceo-div h4, .ceo-div hr{
+        padding: 0 !important;
+        margin-inline: 0;
+        width: 100%;
+    }
+    .ceo-div p{
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+    }
+    .ceo-div .smashtech-button{
+        font-size: 95% !important;
+        padding: .7rem 1.5rem;
+    }
+    
+    .tab-container .tabs{      
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        padding: 0 ;
+        margin: 0;
+        gap: 1rem;
+    }
+    .tab-container .tabs button{
+        font-size: 95% !important;
+        padding: .7rem 1rem;
+        width: 100%;
+    }
+    #commitment_to_sustainability h2{
+        line-height: 120%;
+    }
+    #commitment_to_sustainability .commitment-quality{
+        gap: 0;
+        padding: 1rem !important;
+    }
+    #commitment_to_sustainability .commitment-quality p{
+        width: 100% !important;
+        margin-block: 1rem 3rem;
+    }
+    .exceptional-customer{
+        width: 100%;
+        padding: 0;
+    }
+    .exceptional-customer .exceptional_cs{
+        width: 100%;
+    }
+    .exceptional-customer h2{
+        padding-block: 0 !important;
+        margin-block: 0 !important;
+        line-height: 110%;
+    }
+    .exceptional-customer div{
+        margin: 0;
+    }
+    .exceptional-customer img{
+        width: 100%;
+        height: auto;
+        /* border-radius: 30px; */
+        margin: 0 !important;
+    }
+
+    .small-map{
+        width: 100% !important;
+    }
+    .footer-menu .row > div{
+        display: flex;
+        gap: 1rem !important;
+    }
+    .footer-menu .row img{
+        width: 5.5rem !important;
+        height: auto !important;
+    }
 }
 
     /* ================================================= */
@@ -374,6 +531,14 @@
         padding: 0 !important;
         gap: 0 !important;
         display: flex;
+    }
+    .banner_otherpages h1 {
+        font-size: 6.6rem;
+    }
+    
+    .ceo-div .smashtech-button{
+        font-size: 1rem !important;
+        padding: .7rem 1.45rem !important;
     }
     #whoweare{
         /* background-color: pink !important; */

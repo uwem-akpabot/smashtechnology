@@ -154,18 +154,8 @@ const Navbar = (props) => {
       {/* style={{background: 'red'}} */}
       <div className="contacts" >
           <div>
-            <button className="smashtech-button swipe-button">Get In Touch</button>
-
-            {/* <a href="https://wa.me/message/GMNIQ5YNLZRFD1" className="zyzics__social-link" title="Chat with us on WhatsApp"><UilWhatsapp /></a>
-            <a href="" className="zyzics__social-link" title="Send us an email"><UilEnvelope /></a>
-            <a href="https://www.youtube.com/@zyzics-it-training" className="zyzics__social-link" title="Watch tutorials on our YouTube channel"><UilYoutube /></a>
-            <a href="https://linkedin.com/company/zyzics" className="zyzics__social-link"><UilLinkedin /></a>  */}
-          </div> 
-          <div>
-            <a href="tel:+2348012345678" title="Click here to call us now!">
-              {/* <h6><UilPhone /> +234 801234455</h6> */}
-            </a>
-          </div>       
+            <a href="#footer" className="smashtech-button swipe-button">Get In Touch</a>
+          </div>    
         </div>  
     </nav>
   );

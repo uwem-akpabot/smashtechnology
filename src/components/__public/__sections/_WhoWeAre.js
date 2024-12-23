@@ -19,7 +19,7 @@ const WhoWeAre = () => {
           </div>
           <div className="left-right">
             <div className="small"></div>
-            <img src={biz3} />
+            <img src={yakubu} />
           </div>
         </div>
 

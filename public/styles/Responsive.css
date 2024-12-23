@@ -54,8 +54,9 @@
         gap: 0;     
     }
     #whoweare .left-left img, #whoweare .left-right img{
-        height: 15rem;
+        height: auto;
         border-radius: 2rem;
+        width: 100% !important;
     }
     #whoweare .small{
         width: 8.4rem;
@@ -386,6 +387,98 @@
         width: 5.5rem !important;
         height: auto !important;
     }
+
+    /* Nav new */
+    ul.menu{ /* The overall wrapper wrapping the entire menu container */
+        height: 90vh;
+    }
+    .menu-item { /* Inner container wrapping the menu items only */
+        position: relative;
+        padding: 1.5rem 1.1rem;
+    }
+    .menu-button{ /* Each menu link e.g. Company */
+        background: #fff;
+        background-color: red !important;
+        cursor: pointer;
+        align-items: center;
+        font-size: 20px !important;
+        color: #393838; 
+        display: flex;
+        width: 100%;
+      }
+      
+      .menu-button:hover,
+      .menu-button.active {
+        color: var(--smashtech-color); 
+      }
+      
+      .caret {
+        margin-left: 5px;
+        transition: transform 0.3s ease;
+        font-size: 20px;
+      }
+      
+      .caret.rotate {
+        transform: rotate(180deg);
+      }
+      
+      .dropdown {
+        position: relative;
+        /* top: 100%;
+        left: 0; */
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd;
+        z-index: 1000;
+        display: flex;
+        gap: 20px;
+        width: 350px;
+        padding: 20px;
+        flex-direction: column;
+        margin-top: 3.1rem;
+        background-color: red !important;
+      }
+      
+      .dropdown-angle {
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        width: 20px;
+        height: 20px;
+        background-color: #ffffff;
+        transform: rotate(45deg);
+        box-shadow: -3px -3px 3px rgba(0, 0, 0, 0.05);
+        border-top: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+      }
+      .dropdown-content {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      
+      .dropdown-content ul {
+        list-style: none;
+        flex: 2;
+        padding: 0;
+      }
+      
+      .dropdown-content ul li {
+        padding: 8px 0;
+      }
+      
+      .dropdown-content ul li a {
+        color: #333;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      
+      .dropdown-content ul li span {
+        display: block;
+        color: #666;
+        font-size: 14px;
+        margin-top: 4px;
+      }
 }
 
     /* ================================================= */
